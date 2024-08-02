@@ -1,0 +1,61 @@
+/* 챌린지 기획서 */
+.MadeModal {
+    width: 550px;
+    height: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f5fa;
+    padding: 10px;
+    overflow: auto;
+    border-top: 10px solid #00aeda;
+    border-bottom: 10px solid #00aeda;
+    & #Click{
+        color: gray;
+
+    }
+    & #mainImg{
+        display: none;
+    }
+    & label{
+        margin: 5px;
+    }
+
+    & button{
+        background-color: #00aeda;
+        border: none;
+        margin: 5px;
+        width: 100px;
+        border-radius: 20px;
+    }
+    & input{
+        margin: 10px;
+    }
+    .Input {
+        width: 90%;
+        height: 100px;
+        margin: 10px;
+    }
+}
+.name{
+    background:#00aeda;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+.image{
+    & p{
+        background-color: red;
+        display: flex;
+        justify-content: flex-start;
+    }
+    & img{
+        margin-bottom: 20px;
+        background-color: #1b3364;
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+    }
+}

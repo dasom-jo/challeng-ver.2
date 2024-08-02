@@ -1,0 +1,26 @@
+.twoImg {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.twoImg img {
+    height: 400px;
+    margin: 0 130px;
+    width: 30%;
+
+}
+.twoImg > div {
+    width: 50%;
+    padding: 0 20px;
+    & h1{
+        margin: 20px 0px;
+    }
+    & p{
+        font-family: 'Giants-Bold';
+        white-space: pre-wrap;
+        margin: 10px;
+        color: gray;
+        font-size: 15px;
+    }
+}

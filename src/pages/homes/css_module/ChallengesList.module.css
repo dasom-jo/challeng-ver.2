@@ -1,0 +1,39 @@
+.ChallengeCard {
+    width: 300px; /* Set the width to 300px */
+    box-shadow: 5px 5px 20px 1px gray;
+    margin: 10px;
+    }
+.ModalBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 400px;
+    border-top:10px solid #00aeda;
+    border-bottom:10px solid #00aeda;
+    overflow: auto;
+    height: 650px;
+    background-color: white;
+    padding: 20px;
+    font-family: 'Giants-Bold'
+}
+#title{
+    font-family: 'Giants-Bold';
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#body2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 360px;
+    height: 320px;
+}
+#body4{
+    margin: 1px;
+}
+.challengeContainer {
+    margin: 50px 0px;
+}

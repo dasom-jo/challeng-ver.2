@@ -1,0 +1,17 @@
+.Footer{
+    background-color: #00aeda;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.Text{
+    cursor: pointer;
+    background-color:#00aeda;
+    color: white;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

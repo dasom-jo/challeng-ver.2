@@ -1,0 +1,16 @@
+.level{
+    width: 100%;
+    display: flex;
+    text-shadow: 1px 5px  #ffffff;
+    height: 300px;
+    padding-left: 150px;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.7), white);
+    .LevelTitle{
+        margin-top: 100px;
+        font-size: 80px;
+    }
+    .LevelText{
+        margin-top: 25px;
+        margin-left:300px;
+    }
+}

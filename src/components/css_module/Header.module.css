@@ -1,0 +1,30 @@
+.HeaderClass {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    /* transition: background-color 0.3s ease; */ /* 배경색 변화를 부드럽게 만듦 */
+    z-index: 1000;
+
+}
+
+.TestClass {
+    top: 0;
+    background-color:#00aeda;
+
+}
+
+#logo {
+    cursor: pointer;
+    margin: 0;
+    padding: 20px 40px;
+    color: white;
+    font-size: 40px;
+}
+

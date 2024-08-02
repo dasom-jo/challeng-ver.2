@@ -1,0 +1,52 @@
+
+.messageHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+    }
+
+    .Messages {
+    padding: 16px;
+    height: 700px;
+    overflow: auto;
+    background-color: rgb(179, 178, 178);
+    }
+
+    .messageContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+    border-bottom:2px solid rgb(212, 212, 212);
+    padding: 5px 20px;
+
+    }
+
+    .Message {
+        margin-bottom: 1px;
+        flex-grow: 1;
+
+    }
+
+    .deleteButton {
+    margin-left: 10px;
+    margin-bottom: 1px;
+    background-color: #00aeda;
+    border: none;
+    padding: 5px;
+    width: 50px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 1px black;
+    cursor: pointer;
+    }
+    .Footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        text-align: center;
+        font-size: 15px;
+    }

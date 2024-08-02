@@ -1,0 +1,54 @@
+/* 칼로리 */
+.kcals{
+    margin: 40px 40px;
+}
+/* 칼로리 작성 모달창 */
+.KcalWrite{
+    border-bottom: 10px solid #00aeda;
+    border-top: 10px solid #00aeda;
+    background-color: white;
+    right: auto;
+    bottom: auto;
+    width: 500px;
+    height: 500px;
+    margin-top: 20%;
+    margin-left: 30%;
+    margin-bottom: 50%;
+    transform: translate(-10%, -30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.FoodKcal{
+    margin: 10px;
+}
+.btn3{
+    margin: 10px;
+}
+.btn4{
+    background-color: #00aeda;
+    border: none;
+    padding: 5px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.reactCalendar {
+    border-top: 3px solid #00aeda;
+    border-bottom: 3px solid #00aeda;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+}
+
+.reactCalendarTile {
+    text-align: center;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

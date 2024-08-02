@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Giants-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    font-family: 'Giants-Bold';
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.Home{
+    margin:0px;
+    background-color:  #f2f5fa;
+}

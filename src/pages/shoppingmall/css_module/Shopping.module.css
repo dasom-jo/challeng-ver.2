@@ -1,0 +1,37 @@
+
+.banner_img_container {
+  width: 100%;
+  height: 400px; /* 원하는 높이로 설정 */
+  position: relative;
+  overflow: hidden; /* 이미지가 넘치는 부분을 숨깁니다 */
+  margin-bottom: 30px;
+}
+
+
+
+.banner_img {
+  width: 100%;
+  height: auto; /* 이미지의 비율을 유지하면서 너비를 100%로 설정 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%); /* 이미지를 중심에 위치 */
+  z-index: 0; /* 이미지가 오버레이 아래에 위치 */
+}
+
+.shop_text {
+  justify-content: center;
+  align-items: center;
+  width: 960px;
+  height: 404px;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  color: white;
+  background-color: rgba(180, 146, 143, 0.8);
+  font-size: 50px;
+  z-index: 2; /* 텍스트를 오버레이 위에 표시 */
+  font-weight: 600;
+}

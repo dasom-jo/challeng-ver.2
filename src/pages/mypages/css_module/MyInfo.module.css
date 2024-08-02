@@ -1,0 +1,49 @@
+.MyInfo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.Info1{
+    margin: 40px 40px;
+    padding: 10px;
+    background-color: #00aeda;
+    height: 600px;
+}
+.MyInfos{
+    width: 300px;
+    text-align: center;
+}
+#profileImg{
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+.ImgBtn{
+    display: none;
+}
+.ProfileText{
+    font-size: 10px;
+    color:white;
+}
+.changname{
+    margin-top: 0px;
+    font-size: 10px;
+    color:white;
+}
+.Nick{
+    font-size: 30px;
+}
+.Lv{
+    background-color: white;
+}
+.Points{
+    background-color: white;
+}
+.Challengg{
+    color: white;
+    font-size: 35px;
+}
+.FollowAndChallenge{
+    margin-top:20px
+}

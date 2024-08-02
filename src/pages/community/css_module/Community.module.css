@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    height: 800px;
+    background-color: #f2f5fa;
+    box-sizing: border-box;
+}
+
+
+.CommunityContainer{
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    padding-top: 60px;
+}
+
+.upperImg{
+    background-image: url('../../../../public/main.jpg');
+    width: 100%;
+    height: 300px;
+}
+
+.communityText{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    padding-top: 120px;
+}

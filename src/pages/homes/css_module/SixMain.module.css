@@ -1,0 +1,36 @@
+.develop{
+    margin-top: 20px;
+    display: flex;
+    width:100%;
+    justify-content: center;
+    height: 800px;
+}
+
+.develop1{
+    color: gray;
+    margin-top: 30px;
+    width: 30%;
+    white-space: pre-wrap;
+    font-size: 15px;
+    & h1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+.develop2{
+    width: 28%;
+    height: 700px;
+}
+.develop3{
+    font-family:none;
+    margin-top: 30px;
+    white-space: pre-wrap;
+    width: 30%;
+    & h1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}

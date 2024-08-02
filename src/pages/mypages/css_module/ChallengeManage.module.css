@@ -1,0 +1,38 @@
+.ChallengeManag {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+    height: 400px;
+    width: 310x;
+}
+
+.ChallengeMap {
+    height: 200px;
+    overflow: auto;
+}
+
+
+.btn1 {
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 3px solid #00aeda;
+    border-top: 3px solid #00aeda;
+}
+
+.btn2 {
+    border: 0;
+    background-color: white;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.ChallengeLists {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    margin: 10px 5px;
+}
+

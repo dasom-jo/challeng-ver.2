@@ -1,0 +1,212 @@
+
+.form {
+  /* background-color: #F4F4F4; */
+  margin: auto;
+  width: 940px;
+  margin-bottom: 80px;
+}
+
+/* 구매목록 텍스트 */
+.purchase_title {
+  width: 940px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+/* 주문내역 검색 div */
+.search_list {
+  width: 900px;
+  margin: 5px auto;
+}
+
+/* input, 검색버튼, 초기화 버튼 큰 div */
+.search_box {
+  background-color: rgb(236, 236, 236);
+  width: 900px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+/* input + button 을 감싸고 있는 div */
+.input_button {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.input {
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  margin-right: 5px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 1px 1px 2px gray;
+}
+
+.search_button {
+  height: 30px;
+  width: 60px;
+  font-weight: 600;
+  background-color: #00aeda;
+  border: none;
+  border-radius: 30px;
+  margin-right: 4px;
+  /* box-shadow: 1px 1px 2px #174194; */
+  color: white;
+  cursor: pointer;
+}
+
+.search_button:hover {
+	color: #00aeda;
+	background: #222225;
+	border-color: #222225;
+}
+
+
+.reset_button {
+  height: 30px;
+  width: 60px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  /* box-shadow: 1px 1px 4px rgb(150, 150, 150); */
+  background-color: rgb(150, 150, 150);
+  color: white;
+  cursor: pointer;
+}
+
+.reset_button:hover {
+	color: #00aeda;
+	background: #222225;
+	border-color: #222225;
+}
+
+
+
+/* search_box가 정렬이 잘 되지 않아서 겉에다가 랩핑함  */
+.sort_box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* 주문내역 텍스트 */
+.order_list {
+  width: 900px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.table {
+  width: 900px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+/* 주문내역 table 제목 */
+.order_title {
+  background-color: #00aeda;
+  height: 30px;
+  color: white;
+  
+}
+
+/* 날짜, 물품정보, 배송상태, 상세보기 간격 */
+.order_date {
+  width: 100px;
+}
+
+.order_info {
+  width: 350px;
+}
+
+.order_state {
+  width: 150px;
+}
+
+.order_detail {
+  width: 150px;
+}
+
+/* 사용자가 주문한 내용 정보  */
+.add_prd {
+  text-align: center;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  height: 120px;
+  background-color: #F4F4F4;
+}
+
+/* 구매확정, 반품/교환, 후기작성 공통 */
+.button {
+  display: flex;
+  justify-content: center;
+  width: 75px;
+  height: 25px;
+  margin: auto;
+  margin-bottom: 4px;
+  border: none;
+  border-radius: 30px;
+  background-color: #00aeda;
+  color: white;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.button:hover {
+    color: #00aeda;
+    background: #222225;
+    border-color: #222225;
+}
+
+
+
+.table_container {
+  margin-bottom: 20px;
+}
+
+.resizedImage {
+  width: 90px;
+  height: 90px;
+}
+
+/* ---------------------------------------------------------- */
+
+.banner_img_container {
+  width: 100%;
+  height: 400px; /* 원하는 높이로 설정 */
+  position: relative;
+  overflow: hidden; /* 이미지가 넘치는 부분을 숨깁니다 */
+  margin-bottom: 30px;
+}
+
+
+.banner_img {
+  width: 100%;
+  height: auto; /* 이미지의 비율을 유지하면서 너비를 100%로 설정 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 이미지를 중심에 위치 */
+  z-index: 0; /* 이미지가 오버레이 아래에 위치 */
+}
+
+.shop_text {
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 404px;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  color: white;
+  background-color: rgba(121, 89, 60, 0.8);
+  font-size: 50px;
+  z-index: 2; /* 텍스트를 오버레이 위에 표시 */
+  font-weight: 600;
+  
+}

@@ -1,0 +1,170 @@
+.container {
+  margin-bottom: 100px;
+}
+
+/* 카드 전체 묶음 div */
+.product_container {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px;
+}
+
+/* 개별 카드 */
+.product_card {
+  padding: 10px;
+  width: 240px;
+  height: 420px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.product_card:hover {
+  background: #fafafa;
+}
+
+
+/* name, discountPrice, price  div */
+.product_details {
+  width: 230px;
+  height: 110px;
+  text-align: start;
+  margin-left: 10px;
+}
+
+
+/* 상품 이미지 */
+.product_img {
+  margin-top: 5px;
+  width: 210px;
+  height: 210px;
+}
+
+/* 임시데이터  */
+/* .product_price {
+  width: 210px;
+  margin-top: 5px;
+  text-decoration: line-through;
+  color: #b2b2b2;
+  font-weight: 600;
+} */
+
+/* API 데이터 */
+.product_price {
+  width: 210px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+/* .product_disc_price {
+  width: 210px;
+  margin-top: 2px;
+  font-weight: 600;
+} */
+
+/* .product_rating {
+  width: 210px;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+} */
+
+.product_name {
+  width: 210px;
+}
+
+.product_brand {
+  width: 210px;
+}
+
+.product_description {
+  width: 210px;
+}
+
+
+
+/* 카테고리 버튼 */
+.filter_button {
+  width: 60px;
+  height:25px;
+  margin: 0 5px;
+  border: none;
+  color: #00aeda;
+  background: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.filter_button:hover {
+	color: #00aeda;
+	background: #222225;
+	border-color: #222225;
+}
+
+.filter_buttons {
+  width: 960px;
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+/* 검색 창 */
+.search_input {
+
+  margin-left: 290px;
+  height: 25px;
+  border-radius: 30px;
+}
+
+/* 검색 버튼 */
+.search_button {
+  width: 60px;
+  height:25px;
+  margin: 0 5px;
+  border: none;
+  color: #FFFFFF;
+  background: #00aeda;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.search_button:hover {
+	color: #00aeda;
+	background: #222225;
+	border-color: #222225;
+}
+
+.like_icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.product_brand {
+  font-size: small;
+}
+
+/* 페이지네이션 버튼 박스 */
+.pagination {
+  margin: auto;
+  width: 960px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(189, 185, 185);
+}
+
+.product_brand {
+  color: #00aeda ;
+}

@@ -1,0 +1,206 @@
+
+/* 장바구니 문자 */
+.cart_title {
+  width: 900px;
+  margin: auto;
+  margin-bottom: 20px
+}
+
+/* table form  */
+.cart_form {
+  background-color: #F4F4F4;
+  width: 900px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+/* table 제목 색상 */
+.t_title {
+  background-color: #00aeda;
+  height: 40px
+}
+
+/* 체크박스, 이름, 가격, 수량, 포인트, 합계 */
+.product_check {
+  width: 55px;
+}
+
+.product_name {
+  width: 350px;
+  color: white;
+}
+
+.product_price {
+  width: 105px;
+  color: white;
+}
+
+.product_quantity {
+  width: 105px;
+  color: white;
+}
+
+.product_point {
+  width: 105px;
+  color: white;
+}
+
+.product_total {
+  width: 150px;
+  color: white;
+}
+
+
+/* 삭제 버튼 div */
+.del_button_box {
+  width: 900px;
+  margin: auto;
+}
+
+/* 삭제버튼 */
+.del_button {
+  border: none;
+  background-color: #00aeda;
+  color: white;
+  height: 25px;
+  width: 70px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+.del_button:hover {
+	color: #00aeda;
+	background: #222225;
+	border-color: #222225;
+}
+
+/* .del_button:active {
+  box-shadow: 1px 1px 4px #174194 inset;
+  background-color: #326de4;
+} */
+
+/* 뒤로가기, 주문하기 div */
+.buttons {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/* 뒤로가기 버튼 */
+.back_button {
+  border-radius: 30px;
+  width: 100px;
+  height: 40px;
+  font-weight: 600;
+  border: none;
+  /* box-shadow: 1px 1px 4px rgb(90, 90, 90); */
+  margin-right:20px;
+  background-color: rgb(150, 150, 150);
+  color: white;
+  cursor: pointer;
+}
+
+.back_button:hover {
+	color: #00aeda;
+	background: #222225;
+	border-color: #222225;
+}
+
+/* .back_button:active {
+  box-shadow: 1px 1px 4px #8b8b8d inset;
+  background-color: #dadada;
+} */
+
+/* 주문하기 버튼 */
+.order_button {
+  width: 100px;
+  height: 40px;
+  font-weight: 600;
+  background-color: #00aeda;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.order_button:hover {
+	color: #00aeda;
+	background: #222225;
+	border-color: #222225;
+}
+
+/* .order_button:active {
+  box-shadow: 1px 1px 4px #174194 inset;
+  background-color: #326de4;
+} */
+
+.tr_body {
+  text-align: center;
+  border-bottom: 1px solid rgb(201, 201, 201);
+  height: 50px;
+}
+
+/* 최종 결제금액, 원 div */
+.payment {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+/* 최종 결제금액 */
+.final_pay {
+  font-weight: 600;
+  font-size: large;
+}
+
+/* 원 */
+.won {
+  font-weight: 600;
+  font-size: large;
+}
+
+
+/* --------------------------------------------------------------------- */
+
+
+
+.banner_img_container {
+  width: 100%;
+  height: 400px; /* 원하는 높이로 설정 */
+  position: relative;
+  overflow: hidden; /* 이미지가 넘치는 부분을 숨깁니다 */
+  margin-bottom: 30px;
+}
+
+
+.banner_img {
+  width: 100%;
+  height: auto; /* 이미지의 비율을 유지하면서 너비를 100%로 설정 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 이미지를 중심에 위치 */
+  z-index: 0; /* 이미지가 오버레이 아래에 위치 */
+}
+
+.shop_text {
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 404px;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  color: white;
+  background-color: rgba(158, 96, 122, 0.8);
+  font-size: 50px;
+  z-index: 2; /* 텍스트를 오버레이 위에 표시 */
+  font-weight: 600;
+  
+}

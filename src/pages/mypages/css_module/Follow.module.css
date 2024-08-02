@@ -1,0 +1,43 @@
+
+.Info2 {
+    display: inline;
+    margin: 70px 20px;
+    padding: 10px;
+}
+
+.followBtn {
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 3px solid #00aeda;
+    border-top: 3px solid #00aeda;
+}
+
+.followLists {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.followImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.followUl {
+    background-color: #f2f5fa;
+    list-style: none;
+    padding: 0;
+}
+
+.followUl li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(117, 117, 117);
+    padding: 10px;
+}

@@ -1,0 +1,8 @@
+
+
+.dialogContent{
+    width: 100%;
+    border-top:10px solid #00aeda ;
+    border-bottom:10px solid #00aeda ;
+    min-width: 550px;
+}

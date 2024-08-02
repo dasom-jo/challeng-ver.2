@@ -1,0 +1,29 @@
+.menu {
+    color: white;
+    height: 500px;
+    background-color: #2e2e30;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.menufirstText{
+    margin-left: 40px
+
+}
+
+.menuImg{
+    width: 500px;
+
+}
+.menuText{
+    margin-left: 50px;
+    width: 35%;
+    padding: 10px 20px;
+    & h2{
+        margin: 10px;
+    }
+    & p{
+        color: gray;
+    }
+}
