@@ -74,7 +74,6 @@ function SwipeableEdgeDrawer({openDrawer,toggleDrawer}) {
             </div>
           ))}
         </div>
-        <p className={myMessage.Footer}>CHALLEN.GG</p>
       </SwipeableDrawer>
     </Root>
   );

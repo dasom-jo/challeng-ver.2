@@ -5,13 +5,8 @@ import Menufilter from "./homes/components/MenuFilter";
 import { useState, useEffect } from "react";
 import { challengApi } from "../api/services/challenge";
 import { useAuth } from "../hooks/useAuth";
-import siximg from "../pages/homes/images/iPhone-app.png"
 import OneMain from "./homes/components/OneMain";
-import TwoMain from "./homes/components/TwoMain";
-import ThreeMain from "./homes/components/ThreeMain";
-import FourMain from "./homes/components/FourMain";
-import FiveMain from "./homes/components/FiveMain";
-import SixMain from "./homes/components/SixMain";
+
 
 const Home = () => {
     const { loginUser, kakaoLogin } = useAuth();
@@ -82,15 +77,6 @@ const Home = () => {
         <div className={styleHome.Home}>
             {/* 챌린지 메인 화면,주먹진여자 */}
             <OneMain/>
-            {/* 챌린지 소개글 */}
-            <TwoMain/>
-            {/* 페이지소개글 */}
-            <ThreeMain/>
-            {/* 레벨시스템 */}
-            <FourMain/>
-            {/* 챌린지소개끝,남자가 앉아있는 사진 */}
-            <FiveMain/>
-
             <div>
                 {/* 챌린지 선택 필터메뉴 */}
                 <Menufilter
@@ -110,9 +96,6 @@ const Home = () => {
                    {/* 랭킹 */}
                 <Ranker />
             </div>
-            {/* 개발자한마디 */}
-            <SixMain/>
-
         </div>
     );
 };

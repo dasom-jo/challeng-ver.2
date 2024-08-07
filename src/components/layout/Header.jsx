@@ -5,10 +5,7 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import PeopleIcon from '@mui/icons-material/People';//커뮤니티아이콘
 import FavoriteIcon from '@mui/icons-material/Favorite';//마이페이지 아이콘
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';//쇼핑몰아이콘
 import LogoutIcon from '@mui/icons-material/Logout';//로그아웃 아이콘
-import Banner from "../Banner";
-import BannerMessage from "../BannerMessage";
 import NotificationsIcon from '@mui/icons-material/Notifications';//마이메세지아이콘
 import SwipeableEdgeDrawer from "../MyMessage"
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';//로그인아이콘
@@ -49,7 +46,6 @@ const Header = () => {
     //기본메뉴:로그아웃된상태
     const [menus, setMenus] = useState([
         { path: "/community" , label:"커뮤니티",icon:PeopleIcon },
-        { path: "/shopping" , label:"쇼핑몰",icon:AddShoppingCartIcon },
         { path: "/login" , label:"로그인",icon:ExitToAppIcon },
     ]);
     //로그인되어잇을시
@@ -59,13 +55,11 @@ const Header = () => {
                 {path: "/", label:"마이메세지",icon:NotificationsIcon},
                 {path: "/community", label:"커뮤니티",icon:PeopleIcon},
                 {path: "/mypage", label:"마이페이지",icon:FavoriteIcon},
-                {path: "/shopping", label:"쇼핑몰",icon:AddShoppingCartIcon},
                 {path: "/logout", label:"로그아웃",icon:LogoutIcon},
                 ])
         }else {
             setMenus([
                 { path: "/community" , label:"커뮤니티",icon:PeopleIcon },
-                { path: "/shopping" , label:"쇼핑몰" ,icon:AddShoppingCartIcon},
                 { path: "/signin" , label:"로그인",icon:LogoutIcon },
             ]);
             }
@@ -114,8 +108,6 @@ const Header = () => {
 
     return (
         <>
-        {/* 최상단 광고배너 */}
-        <Banner ><BannerMessage /></Banner>
         {/* 챌린지 홈 마크 */}
         <div className={`${styleHeader.HeaderClass} ${showNav && styleHeader.TestClass}`}>
             <h1 id={styleHeader['logo']}

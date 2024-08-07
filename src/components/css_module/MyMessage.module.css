@@ -42,11 +42,4 @@
     box-shadow: 1px 1px 3px 1px black;
     cursor: pointer;
     }
-    .Footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 20px;
-        text-align: center;
-        font-size: 15px;
-    }
+
