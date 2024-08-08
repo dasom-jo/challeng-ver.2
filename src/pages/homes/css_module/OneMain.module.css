@@ -8,7 +8,8 @@
 /* 가장최상단 주먹진 여자  */
 .girlImg {
     width: 100%;
-    z-index: 1;
+    height: 100%;
+    object-fit: cover;
 }
 /* 가장최상단 주먹진 여자 안의 텍스트  */
 .text {
@@ -21,6 +22,18 @@
     display: flex;
     color: white;
     font-size: 50px;
-    z-index: 2;
+
     font-weight: 600;
+}
+
+@media (max-width:600px){
+    .girlImg{
+        display: none;
+    }
+}
+
+.HomeMobile{
+    width: 600px;
+    height: 100%;
+    background-color: rgb(14, 54, 90);
 }

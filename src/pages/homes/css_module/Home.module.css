@@ -4,20 +4,30 @@
     font-weight: 700;
     font-style: normal;
 }
+
 *{
     font-family: 'Giants-Bold';
     box-sizing: border-box;
-
+    /* height: 100vh; Viewport Height */
+    width: 100vw;  /* Viewport Width */
+    /* overflow: hidden; 스크롤 방지 */
+    margin: 0; /* 기본 마진 제거 */
 }
 
 body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .Home{
     margin:0px;
     background-color:  #f2f5fa;
+}
+
+.HomeMobile{
+    max-width: 500px;
+    height: 100%;
+    background-color: green;
+    z-index: 3;
 }

@@ -15,23 +15,23 @@ import Swal from "sweetalert2";
 
 const Header = () => {
 
-    const [showNav, setShowNav] = useState(false);
-    const [scrollY, setScrollY] = useState(0);
+    // const [showNav, setShowNav] = useState(false);
+    // const [scrollY, setScrollY] = useState(0);
 
 
-    useEffect(() => {
-        const handleScroll = (e) => {
-                const myScrollY = window.scrollY;
-            if (myScrollY < scrollY) {
-                setShowNav(false);
-            } else {
-                setShowNav(true);
-            }
-            setScrollY(myScrollY);
-        }
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll)
-    }, [scrollY]);
+    // useEffect(() => {
+    //     const handleScroll = (e) => {
+    //             const myScrollY = window.scrollY;
+    //         if (myScrollY < scrollY) {
+    //             setShowNav(false);
+    //         } else {
+    //             setShowNav(true);
+    //         }
+    //         setScrollY(myScrollY);
+    //     }
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => window.removeEventListener('scroll', handleScroll)
+    // }, [scrollY]);
 
 
     const {loginUser,logout} = useAuth();
@@ -109,7 +109,7 @@ const Header = () => {
     return (
         <>
         {/* 챌린지 홈 마크 */}
-        <div className={`${styleHeader.HeaderClass} ${showNav && styleHeader.TestClass}`}>
+        <div className={styleHeader.HeaderClass}>
             <h1 id={styleHeader['logo']}
                 onClick={() => goToMenu('/')}
             >CHALLEN.GG</h1>

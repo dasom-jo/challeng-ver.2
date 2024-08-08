@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { challengApi } from "../api/services/challenge";
 import { useAuth } from "../hooks/useAuth";
 import OneMain from "./homes/components/OneMain";
-
+import HomeMobile from "../pages/homes/css_module/Home.module.css"
 
 const Home = () => {
     const { loginUser, kakaoLogin } = useAuth();
@@ -76,25 +76,23 @@ const Home = () => {
     return (
         <div className={styleHome.Home}>
             {/* 챌린지 메인 화면,주먹진여자 */}
-            <OneMain/>
-            <div>
-                {/* 챌린지 선택 필터메뉴 */}
+            {/* <OneMain/> */}
+
+            <div className={styleHome.HomeMobile}>
+                <div>
                 <Menufilter
                     sortKey={sortKey}
                     setSortKey={setSortKey}
                     handleSearchInputChange={handleSearchInputChange}
                     handleSearch={handleSearch}
                 />
-            </div>
-
-            <div className={styleHome.challengeContainer}>
-                {/* 챌린지 */}
-                <Challenge challengeList={challengeList} />
-            </div>
-
-            <div>
-                   {/* 랭킹 */}
-                <Ranker />
+                </div>
+                <div className={styleHome.challengeContainer}>
+                    <Challenge challengeList={challengeList} />
+                </div>
+                <div>
+                    <Ranker />
+                </div>
             </div>
         </div>
     );
