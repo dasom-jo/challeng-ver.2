@@ -1,12 +1,12 @@
 /* 버튼 공통 컴포넌트  */
 :root {
-    --btn-bg: #f2f5fa;;
+
     --font:#00aeda;
 }
 
 .btn {
     margin: 10px;
-    width: 60px;
+    width: 80px;
     height: 50px;
 
 }
@@ -20,7 +20,7 @@
     background-color: var(--btn-bg);
     font-weight: bolder;
     font-size: large;
-
+    color: white;
     &::before,
     &::after {
         position: absolute;
@@ -43,15 +43,8 @@
     }
 
     &:hover {
-        letter-spacing: 5px;
-        color: #c0e6f0;
-        background: transparent;
-        border-bottom: 1px solid #c0e6f0;
-        &::before,
-        &::after {
-            opacity: 1;
-            transform: scaleX(1.2);
-        }
+
+        color: var(--font);
     }
 }
 

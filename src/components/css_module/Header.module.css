@@ -1,25 +1,11 @@
 .HeaderClass {
-    position: fixed;
-    top:0;
+    bottom:0;
     left: 0;
     background-color:#00aeda;
-    width: 100%;
+    max-width: 425px;
     height: 10vh;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end;
     align-items: center;
-    white-space: nowrap;
-    /* transition: background-color 0.3s ease; */ /* 배경색 변화를 부드럽게 만듦 */
-    z-index: 1000;
 
 }
-
-
-#logo {
-    cursor: pointer;
-    margin: 0;
-    padding: 20px 40px;
-    color: white;
-    font-size: 40px;
-}
-

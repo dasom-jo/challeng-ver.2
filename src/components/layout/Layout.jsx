@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
         <BrowserRouter>
 
             <Main>
-                {/* <Header /> */}
+
                 {children}
             </Main>
 

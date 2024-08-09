@@ -46,9 +46,15 @@ export default function Challenge({ challengeList }) {
   const CustomLeftArrow = ({ onClick }) => (
     <div
       onClick={onClick}
-      className="cursor-pointer text-2xl"
-      style={{ position: 'absolute', top: '50%', left: '10px', zIndex: 10 }}
-    >
+      className="cursor-pointer "
+      style={{
+        fontSize: '30px',
+        position: 'absolute',
+        top: '50%',
+        left: '10px',
+        zIndex: 10 ,
+        cursor:"pointer"}}
+      >
       ◀
     </div>
   );
@@ -56,8 +62,14 @@ export default function Challenge({ challengeList }) {
   const CustomRightArrow = ({ onClick }) => (
     <div
       onClick={onClick}
-      className="cursor-pointer text-2xl"
-      style={{ position: 'absolute', top: '50%', right: '-320px', zIndex: 10 }}
+      className="cursor-pointer"
+      style={{
+          fontSize: '30px',
+          position: 'absolute',
+          top: '50%',
+          right: '-320px',
+          zIndex: 10 ,
+          cursor:"pointer"}}
     >
       ▶
     </div>
@@ -176,17 +188,17 @@ const ChallengeCard = ({ challenge, handleOpen, loginUser }) => {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <Typography variant="body3">
+      <Typography style={{ maxWidthidth:"10px"}}>
         {loginUser ? (
           starLike ? (
             <RiStarSmileFill
               onClick={() => handleUnstar(challenge)}
-              style={{ fontSize: "30px", margin: "10px", color: "yellow" }}
+              style={{ fontSize: "30px", margin: "10px", color: "yellow",maxWidth:"500px" }}
             />
           ) : (
             <RiStarSmileFill
               onClick={() => handleStar(challenge)}
-              style={{ fontSize: "30px", margin: "10px", color: "black" }}
+              style={{ fontSize: "30px", margin: "10px", color: "black" ,maxWidth:"500px" }}
             />
           )
         ) : (

@@ -1,3 +1,4 @@
+/* General Styles */
 @font-face {
     font-family: 'Giants-Bold';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
@@ -5,29 +6,40 @@
     font-style: normal;
 }
 
-*{
+* {
     font-family: 'Giants-Bold';
     box-sizing: border-box;
-    /* height: 100vh; Viewport Height */
-    width: 100vw;  /* Viewport Width */
-    /* overflow: hidden; 스크롤 방지 */
-    margin: 0; /* 기본 마진 제거 */
-}
-
-body {
-    width: 100%;
+    width: 100vw;
     margin: 0;
-    padding: 0;
 }
 
-.Home{
-    margin:0px;
-    background-color:  #f2f5fa;
-}
-
-.HomeMobile{
-    max-width: 500px;
+.HomeMobile {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    max-width: 425px;
     height: 100%;
-    background-color: green;
-    z-index: 3;
+    background: linear-gradient(to bottom, #A2EBFD, #032B35);
+    z-index: 5;
+}
+
+
+@media (max-width: 1024px) {
+    .HomeMobile {
+        width: 100%;
+        max-width: 450px;
+        height: 100%;
+        background: linear-gradient(to bottom, #A2EBFD, #032B35);
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+    }
+}
+
+.HomeTitle{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    max-width: 425px;
 }

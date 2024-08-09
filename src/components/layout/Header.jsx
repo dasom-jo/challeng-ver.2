@@ -14,26 +14,6 @@ import Swal from "sweetalert2";
 
 
 const Header = () => {
-
-    // const [showNav, setShowNav] = useState(false);
-    // const [scrollY, setScrollY] = useState(0);
-
-
-    // useEffect(() => {
-    //     const handleScroll = (e) => {
-    //             const myScrollY = window.scrollY;
-    //         if (myScrollY < scrollY) {
-    //             setShowNav(false);
-    //         } else {
-    //             setShowNav(true);
-    //         }
-    //         setScrollY(myScrollY);
-    //     }
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => window.removeEventListener('scroll', handleScroll)
-    // }, [scrollY]);
-
-
     const {loginUser,logout} = useAuth();
     const [value, setValue] = React.useState('recents');
 
@@ -110,9 +90,6 @@ const Header = () => {
         <>
         {/* 챌린지 홈 마크 */}
         <div className={styleHeader.HeaderClass}>
-            <h1 id={styleHeader['logo']}
-                onClick={() => goToMenu('/')}
-            >CHALLEN.GG</h1>
         {/* 상단바  */}
         <BottomNavigation
             sx={bottonNavStyle}
@@ -124,7 +101,7 @@ const Header = () => {
                         <BottomNavigationAction
                         sx={{
                             color: "white",
-                            '&.Mui-selected': activeStyle,
+                            maxWidth:"70px"
                         }}
                             className={styleHeader.BottomNavigationAction}
                             key={idx}

@@ -7,6 +7,7 @@ import { challengApi } from "../api/services/challenge";
 import { useAuth } from "../hooks/useAuth";
 import OneMain from "./homes/components/OneMain";
 import HomeMobile from "../pages/homes/css_module/Home.module.css"
+import Header from "../components/layout/Header"
 
 const Home = () => {
     const { loginUser, kakaoLogin } = useAuth();
@@ -76,9 +77,9 @@ const Home = () => {
     return (
         <div className={styleHome.Home}>
             {/* 챌린지 메인 화면,주먹진여자 */}
-            {/* <OneMain/> */}
-
+            <OneMain/>
             <div className={styleHome.HomeMobile}>
+                <div className={styleHome.HomeTitle}>challen.gg</div>
                 <div>
                 <Menufilter
                     sortKey={sortKey}
@@ -92,6 +93,9 @@ const Home = () => {
                 </div>
                 <div>
                     <Ranker />
+                </div>
+                <div>
+                    <Header />
                 </div>
             </div>
         </div>

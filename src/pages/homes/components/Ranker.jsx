@@ -28,6 +28,7 @@ export default function Ranker() {
     return (
         <div className={ proChallenger.RankerName}>
             <h1>Who is pro-challenger?</h1>
+
             {newRanker.slice(0, 3).map((r)=>(
             <div key={r.id} className={ proChallenger.Ranker} >
                 <img
