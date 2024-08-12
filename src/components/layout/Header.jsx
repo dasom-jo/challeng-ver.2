@@ -32,7 +32,7 @@ const Header = () => {
     useEffect(()=>{
         if(loginUser){
             setMenus([
-                {path: "/", label:"마이메세지",icon:NotificationsIcon},
+                {path: "/", label:"알림",icon:NotificationsIcon},
                 {path: "/community", label:"커뮤니티",icon:PeopleIcon},
                 {path: "/mypage", label:"마이페이지",icon:FavoriteIcon},
                 {path: "/logout", label:"로그아웃",icon:LogoutIcon},
@@ -78,7 +78,7 @@ const Header = () => {
         });
     }
     const bottonNavStyle = {
-        width: "700px",
+        width: "425px",
         backgroundColor: "transparent",
         color:'black'
     };
@@ -111,7 +111,7 @@ const Header = () => {
                                 m.path === '/logout' ?
                                 () => handleLogout()
                                 :
-                                m.label === '마이메세지' ? toggleDrawer : () => goToMenu(m.path)
+                                m.label === '알림' ? toggleDrawer : () => goToMenu(m.path)
                             }
                         />
                     ))

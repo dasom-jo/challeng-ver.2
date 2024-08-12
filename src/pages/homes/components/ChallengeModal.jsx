@@ -103,7 +103,6 @@ const ChallengeModal = ({isModalOpen, handleClose, challenge}) => {
             onClose={handleClose}
             aria-labelledby="title"
             aria-describedby="body"
-
         >
             <Box
                 className={ChallengesList.ModalBox} >

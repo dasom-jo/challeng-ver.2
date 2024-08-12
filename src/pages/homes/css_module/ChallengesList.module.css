@@ -1,13 +1,15 @@
 .ChallengeCard {
     width: 300px; /* Set the width to 300px */
     box-shadow: 5px 5px 20px 1px gray;
-    margin: 10px;
+    margin: 20px 20px 60px 60px;
 
     }
 .ModalBox{
     position: absolute;
     top: 50%;
     left: 50%;
+    justify-content: center;
+    align-items: center;
     transform:translate(-50%, -50%);
     width: 400px;
     border-top:10px solid #00aeda;
@@ -17,6 +19,21 @@
     background-color: white;
     padding: 20px;
     font-family: 'Giants-Bold'
+}::-webkit-scrollbar {
+    width: 10px; /* 스크롤바 너비 */
+}
+
+/* 스크롤바 트랙 */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* 트랙 배경색 */
+    border-radius: 10px; /* 트랙의 둥근 모서리 */
+}
+
+/* 스크롤바 핸들(thumb) */
+::-webkit-scrollbar-thumb {
+    background-color: #89898b; /* 핸들 색상 */
+    border-radius: 10px; /* 핸들의 둥근 모서리 */
+    border: 2px solid #f1f1f1; /* 핸들의 외곽선 */
 }
 #title{
     font-family: 'Giants-Bold';
@@ -36,6 +53,6 @@
     margin: 1px;
 }
 
-.challengeContainer {
+/* .challengeContainer {
     margin: 50px 0px;
-}
+} */

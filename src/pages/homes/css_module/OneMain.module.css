@@ -8,7 +8,6 @@
 /* 가장최상단 주먹진 여자  */
 .girlImg {
     width: 100%;
-    height: auto;
     min-height: 100vh;
     object-fit: cover;
     z-index: 1;

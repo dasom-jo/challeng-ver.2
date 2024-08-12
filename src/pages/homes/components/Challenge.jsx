@@ -51,11 +51,12 @@ export default function Challenge({ challengeList }) {
         fontSize: '30px',
         position: 'absolute',
         top: '50%',
-        left: '10px',
+        left: '15px',
         zIndex: 10 ,
-        cursor:"pointer"}}
+        cursor:"pointer",
+        color:'white'}}
       >
-      ◀
+      ⟪
     </div>
   );
 
@@ -64,14 +65,15 @@ export default function Challenge({ challengeList }) {
       onClick={onClick}
       className="cursor-pointer"
       style={{
-          fontSize: '30px',
-          position: 'absolute',
-          top: '50%',
-          right: '-320px',
-          zIndex: 10 ,
-          cursor:"pointer"}}
-    >
-      ▶
+        fontSize: '30px',
+        position: 'absolute',
+        top: '50%',
+        left: '380px',
+        zIndex: 10,
+        cursor:"pointer",
+        color:'white'}}
+      >
+      ⟫
     </div>
   );
 
@@ -163,7 +165,8 @@ const ChallengeCard = ({ challenge, handleOpen, loginUser }) => {
     <div>
       <Card
         className={ChallengesList.ChallengeCard}
-        sx={{ width: 300, boxShadow: "5px 5px 20px 1px gray" }} // 너비 설정
+        sx={{ width: 300, boxShadow: "5px 5px 20px 1px gray" ,
+            }}
       >
       <CardActionArea onClick={() => handleOpen(challenge)} >
         <CardMedia
