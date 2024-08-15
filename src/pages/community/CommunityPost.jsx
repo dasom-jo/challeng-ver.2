@@ -41,27 +41,8 @@ const CommunityPost = () => {
             console.error(error);
         }
     };
-    
+
     const SHOW_POST_NUM = 7;
-
-    const search = () => {
-        // searchWord가 null이나 undefined일 수 있는 상황에서 안전하게 문자열의 공백을 제거한 값을 처리하기 위해 사용
-        const trimmedSearchWord = searchWord?.trim()
-        if(!trimmedSearchWord){
-            Swal.fire({
-                text: "검색어를 입력해주세요",
-                icon: "error",
-            });
-        }else{
-            setPosts(originalPosts.filter((v) => v.title.includes(trimmedSearchWord)));
-            setSearchWord('');
-        }
-    }
-
-    const searchReset = () => {
-        setPosts(originalPosts);
-        setSearchWord('');
-    }
 
     const obj = {
         "자유": 1,
@@ -110,99 +91,13 @@ const CommunityPost = () => {
         setOpen(false);
     };
 
-    const handleKeyDown = (event) => {
-        if (event.key === 'Enter') {
-            search();
-        }
-    };
-
-    const bottomNavigationItems = [
-        { label: "자유", icon: <AirplanemodeActiveIcon /> },
-        { label: "유머", icon: <MoodIcon /> },
-        { label: "운동", icon: <FitnessCenterIcon /> },
-        { label: "질문", icon: <PsychologyAltIcon /> },
-        { label: "지역", icon: <PlaceIcon /> },
-        { label: "홍보", icon: <HailIcon /> },
-    ];
-
-    const handleBottomNavigationChange = (event, newValue) => {
-        let newPath = '/';
-        switch (newValue) {
-            case 0:
-                newPath = '/communitypost/자유';
-                break;
-            case 1:
-                newPath = '/communitypost/유머';
-                break;
-            case 2:
-                newPath = '/communitypost/운동';
-                break;
-            case 3:
-                newPath = '/communitypost/질문';
-                break;
-            case 4:
-                newPath = '/communitypost/지역';
-                break;
-            case 5:
-                newPath = '/communitypost/홍보';
-                break;
-            default:
-                newPath = '/';
-                break;
-        }
-        navigate(newPath);
-    };
-
-    return ( 
+    return (
         <section className={styles.notice}>
-            <div className={styles.pageTitle}>
-                <div className={styles.container}>
-                    <div className={styles.title}>
-                        <div className={styles.paramTitle}>{params.title}</div>
-                    </div>
-                </div>
+            <div
+                onClick={()=>navigate("/")}
+                className={styles.paramTitle}>{params.title}
             </div>
 
-            <Box sx={{ width: 1000, margin: '10px auto' }}>
-                <BottomNavigation
-                    showLabels
-                    value={obj[params.title] - 1} // 현재 카테고리에 해당하는 인덱스 설정
-                    onChange={handleBottomNavigationChange}
-                >
-                    {bottomNavigationItems.map((item, index) => (
-                        <BottomNavigationAction key={index} label={item.label} icon={item.icon} />
-                    ))}
-                </BottomNavigation>
-            </Box>
-
-            <div id={styles.boardSearch}>
-                <div className={styles.container}>
-                    <div className={styles.searchWindow}>
-                        <TextField 
-                            id="standard-basic" 
-                            label="검색어(제목)를 입력하세요" 
-                            className={styles.searchInput} 
-                            value={searchWord}
-                            onChange={(e)=>setSearchWord(e.target.value)}
-                            autoComplete="off"
-                            onKeyDown={handleKeyDown}
-                            InputProps={{
-                                endAdornment: (
-                                    <InputAdornment position="end">
-                                        <IconButton onClick={search}>
-                                            <SearchIcon className={styles.searchIcon}/>
-                                        </IconButton>
-                                        <IconButton onClick={searchReset}>
-                                            <RestartAltIcon className={styles.resetIcon}/>
-                                        </IconButton>
-                                    </InputAdornment>
-                                ),
-                            }}
-                        />
-                        <PostCreate commId={commId} setPosts={setPosts} posts={posts} setOriginalPosts={setOriginalPosts}/>
-                    </div>
-                </div>
-            </div>
 
             <div id={styles.boardList}>
                 <div className={styles.container}>
@@ -223,7 +118,7 @@ const CommunityPost = () => {
                                         <tr className={styles.post} onClick={()=>handleClickOpenPost(p)}>
                                             <td className={styles.postLike}> {p.Likers? p.Likers.length : 0}</td>
                                             <th className={styles.postTitle}>
-                                                {p.title} 
+                                                {p.title}
                                                 <span className={styles.commentColor}>[{p.Comments? p.Comments.length : 0}]</span>
                                             </th>
                                             <td>{p.User.nickname}</td>
@@ -233,16 +128,16 @@ const CommunityPost = () => {
                                 })}
                         </tbody>
                     </table>
-                    <Stack sx={{alignItems: 'center', mt: '20px', marginBottom:'20px'}}>
+                    <Stack sx={{alignItems: 'center'}}>
                         <Pagination count={totalPage} onChange={handlePage}></Pagination>
                     </Stack>
                 </div>
             </div>
 
             {open &&
-                <PostModal 
+                <PostModal
                     postDetail={postDetail}
-                    open={open} 
+                    open={open}
                     handleClosePost={handleClosePost}
                     setPosts={setPosts}
                     posts={posts}

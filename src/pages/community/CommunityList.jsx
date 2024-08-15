@@ -8,14 +8,14 @@ export default function CommunityList() {
 
     return (
         <div className={styles.container}>
-            <Grid container spacing={2} direction="row" wrap="wrap">
+            <Grid container spacing={5} direction="row" wrap="wrap">
             {itemData.map((d, i) => (
-                <Grid item xs={12} sm={4} key={i} onClick={() => { navigate(`/communitypost/${d.title}`); }}>
+                <Grid item xs={12} sm={40} key={i} onClick={() => { navigate(`/communitypost/${d.title}`); }}>
                     <Card sx={{ boxShadow: '5px 5px 15px 0px rgba(0, 0, 0, 0.5)', padding: 0 }}>
                         <CardActionArea>
                             <CardMedia
                                 component="img"
-                                height="180"
+                                height="200"
                                 image={d.img}
                             />
                             <Box

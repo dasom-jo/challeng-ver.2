@@ -5,12 +5,18 @@
     font-style: normal;
 }
 
+.notice{
+    background-color: red;
+    max-width: 425px;
+
+}
+
 .title{
     font-family: 'WavvePADO-Regular';
     height: 330px;
     font-size: 60px;
-    color: white;
-    padding-top: 100px;
+    color: rgb(51, 10, 10);
+
 }
 
 .paramTitle{
@@ -27,56 +33,11 @@ section.notice {
     padding: 0;
 }
 
-.pageTitle {
-    font-size: 28px;
-    color: #333333;
-    font-weight: 400;
-    text-align: center;
-    background-image: url('../../../../public/main.jpg');
-    height: 300px;
-}
 
-#boardSearch .searchWindow {
-    padding: 15px 0;
-    background-color: #f9f7f9;
-    text-align: center;
-}
-
-#boardSearch .searchWindow .searchWrap {
-    position: relative;
-    /*   padding-right: 124px; */
-    margin: 0 auto;
-    width: 80%;
-    max-width: 564px;
-}
-
-#boardSearch .searchWindow .searchWrap input {
-    height: 40px;
-    width: 100%;
-    font-size: 14px;
-    padding: 7px 14px;
-    border: 1px solid #ccc;
-}
-
-#boardSearch .searchWindow .searchWrap input:focus {
-    border-color: #333;
-    outline: 0;
-    border-width: 1px;
-}
-
-#boardSearch .searchWindow .searchWrap .btn {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 108px;
-    padding: 0;
-    font-size: 16px;
-}
 
 .boardTable {
     font-size: 13px;
-    width: 100%;
+
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
@@ -98,25 +59,25 @@ section.notice {
 }
 
 .boardTable .thNum {
-    width: 100px;
+
     text-align: center;
 }
 
 .thtitle{
-    width: 425px;
+
 }
 
 .thwriter{
-    width: 150px;
+
 }
 
 .boardTable .thDate {
-    width: 200px;
+
 }
 
 .boardTable th,
 .boardTable td {
-    padding: 14px 0;
+
 }
 
 .boardTable tbody td {
@@ -125,8 +86,7 @@ section.notice {
 }
 
 .boardTable tbody th {
-    padding-left: 28px;
-    padding-right: 14px;
+
     border-top: 1px solid #e7e7e7;
     text-align: left;
 }
@@ -193,17 +153,14 @@ section.notice {
     clear: both;
 }
 
-.container {
-    width: 1000px;
-    margin: 0 auto;
-}
+
 
 .blind {
     position: absolute;
     overflow: hidden;
     clip: rect(0 0 0 0);
     margin: -1px;
-    width: 1px;
+
     height: 1px;
 }
 
@@ -218,19 +175,6 @@ section.notice {
     background-color: #f3f2f2;
 }
 
-.searchInput{
-    width: 350px;
-    background-color: white;
-}
-
-.searchBtn{
-    height: 56px;
-    width: 64px;
-}
-.searchReset{
-    height: 56px;
-    width: 120px;
-}
 
 .commentColor{
     color: green;
