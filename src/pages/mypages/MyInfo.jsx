@@ -1,16 +1,15 @@
 
 import myInfo from "./css_module/MyInfo.module.css"
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Follow from "./Follow";
 import { userApi } from "../../api/services/user";
 import ChallengeManage from "./ChallengeManage";
-import Kcal from "./Kcal";
 import MyButtons from "./MyButtons";
-import kcal from "./css_module/Kcal.module.css"
 import myButtons from "./css_module/Buttons.module.css"
-
+import OneMain from "../homes/components/OneMain"
 const MyInfo = () => {
+    const navigation = useNavigate()
     const token = localStorage.getItem('token');
     //로그인된사용자 정보 가져오는 상태관리
     const [userProfile, setUserProfile] = useState();
@@ -116,13 +115,23 @@ const MyInfo = () => {
 
 
     return (
-            <div className={myInfo.MyInfo} >
+            <div>
+                <OneMain/>
+                <div className={myInfo.MyInfo} >
+                    <div
+                        className={myInfo.text1}
+                        onClick={()=>navigation("/")}>
+                        challen.gg
+                    </div>
+                    <div className={myInfo.text2}>
+                        MY PAGE
+                    </div>
                 <div className={myInfo.Info1}>
                     {/* 프로필이미지 */}
-                    <div >
+                    <div id={myInfo.profileImg}>
                         <img
                             src={`http://localhost:8000/${profileImg}`}
-                            id={myInfo.profileImg}
+                            style={{width:"300px",height:"300px"}}
                         />
                     </div>
 
@@ -165,20 +174,6 @@ const MyInfo = () => {
                                     <button type='submit' >save</button>
                                 </div>}
                         </form>
-
-                        <div className={myInfo.Lv} >
-                            {/* 유저레벨 */}
-                            {userProfile ? <p>LV.{level}</p> : <p >LV.스타터</p>}
-                        </div>
-
-                        <div className={myInfo.Points} >
-                            {/* 유저포인트 */}
-                            {myPoint ? <p >{myPoint.point}Point</p> : <p >0Point</p>}
-                        </div>
-
-                        <div className={myInfo.Challengg}>
-                            <p>CHALLEN.GG</p>
-                        </div>
                     </div>
                 </div>
 
@@ -195,17 +190,12 @@ const MyInfo = () => {
                     </div>
                 </div>
 
-                <div>
-                <div className={kcal.kcals}>
-                    {/* 칼로리캘린더 */}
-                    <Kcal />
-                </div>
-
                 <div className={myButtons.Buttons}>
                     {/* 챌린지개설 구매목록 */}
                     <MyButtons/>
                 </div>
             </div>
+
             </div>
 
     );

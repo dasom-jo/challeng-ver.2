@@ -98,20 +98,22 @@ export const CertificationModal = ({ close, modal }) => {
                         style={{
                             border: '1px solid gray',
                             padding: "5px",
-                            margin: "5px",
+                            margin: "15px",
                             borderRadius: "5%",
                             backgroundColor: '#00aeda',
                             cursor: 'pointer'
                         }}
                         htmlFor="uploadImg"
                     >이미지찾기</label>
-                    <input type="file" onChange={showChallenge} id="uploadImg" style={{ display: 'none' }} />
+                    <input type="file" onChange={showChallenge} id="uploadImg" style={{ display: 'none'}} />
                     {preImg ?
-                        <img src={preImg} alt="나의 인증 이미지" style={{ width: '318px', height: '318px' }} />
+                        <img src={preImg} alt="나의 인증 이미지" style={{ width: '318px', height: '318px' ,margin:"10px"}} />
                         : ""
                     }
-                    <button onClick={uploadChallenge}>인증완료</button>
-                    <p>일자별 인증 현황리스트</p>
+                    <button
+                        className={challengeCertification.CBtn}
+                        onClick={uploadChallenge}>인증완료</button>
+                    <p className={challengeCertification.PList}>일자별 인증 현황리스트</p>
                     <div className={challengeCertification.challengeList}>
                         {showChallengeList.map(item => (
                             item.SuccessId === challengeItem.id && (

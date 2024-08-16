@@ -6,24 +6,57 @@
 }
 
 .notice{
-    background-color: red;
-    max-width: 425px;
-
+    position: absolute;
+    top: 0;
+    right: 20%;
+    max-width: 425px; /* 최대 너비 425px */
+    width: 425px;
+    height: 100vh;
+    z-index: 7;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.863);
 }
 
-.title{
-    font-family: 'WavvePADO-Regular';
-    height: 330px;
-    font-size: 60px;
-    color: rgb(51, 10, 10);
-
+.paramTitle1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 50px;
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #A2EBFD, #032B35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
-.paramTitle{
-    text-align: center;
+.paramTitle2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
-
-
+@media (max-width: 1024px) {
+    .notice {
+        display:inline-block;
+        justify-content: center;
+        align-items: center;
+        right: 0; /* 오른쪽 0% */
+        left: 0; /* 왼쪽 0% */
+        width: 100vw; /* 화면 너비에 맞추기 */
+        max-width: 425px; /* 최대 너비 제한 해제 */
+        height: 100vh; /* 전체 높이 */
+    }
+}
+.postCreate{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -37,7 +70,7 @@ section.notice {
 
 .boardTable {
     font-size: 13px;
-
+    min-width: 425px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
@@ -61,23 +94,6 @@ section.notice {
 .boardTable .thNum {
 
     text-align: center;
-}
-
-.thtitle{
-
-}
-
-.thwriter{
-
-}
-
-.boardTable .thDate {
-
-}
-
-.boardTable th,
-.boardTable td {
-
 }
 
 .boardTable tbody td {
@@ -197,10 +213,10 @@ section.notice {
 }
 
 .postTitle{
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #boardList{
-    height: 450px;
+    height: 100vh;
     margin-bottom: 30px;
 }

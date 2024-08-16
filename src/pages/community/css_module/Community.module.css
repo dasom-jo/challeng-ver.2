@@ -29,7 +29,6 @@
 /* 전체 스크롤바 */
 .CommunityContainer::-webkit-scrollbar {
     width: 0px;  /* 스크롤바의 너비 */
-    background-color: #f5f5f5;  /* 스크롤바 배경 색상 */
 }
 
 .header {

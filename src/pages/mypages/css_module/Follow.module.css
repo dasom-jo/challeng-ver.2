@@ -1,13 +1,12 @@
 
 .Info2 {
-    display: inline;
-    margin: 70px 20px;
+    margin: 20px;
     padding: 10px;
 }
 
 .followBtn {
     height: 50px;
-    width: 300px;
+    width: 350px;
     display: flex;
     justify-content: space-between;
     height: 50px;
@@ -16,7 +15,7 @@
 }
 
 .followLists {
-    width: 300px;
+    width: 350px;
     height: 200px;
     overflow: auto;
     margin-right: 10px;

@@ -1,19 +1,62 @@
 .MyInfo{
-    margin-top: 50px;
+    position: absolute;
+    z-index: 200000;
+    top: 0;
+    right: 20%;
+    max-width: 425px;
+    width: 425px;
+    height: 100vh;
+    z-index: 0;
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.76)
+}
+.MyInfo::-webkit-scrollbar {
+    width: 0px;
+}
+@media (max-width: 1024px) {
+    .MyInfo {
+        display:inline-block;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        max-width: 425px;
+        height: 100vh;
+    }
+}
+.text1{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 20PX;
+    font-size: 30px;
+    cursor: pointer;
+}
+.text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
 }
 .Info1{
     margin: 40px 40px;
     padding: 10px;
     background-color: #00aeda;
-    height: 600px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
 }
 .MyInfos{
     width: 300px;
     text-align: center;
 }
 #profileImg{
+    margin-left: 8px;
     width: 300px;
     height: 300px;
     border-radius: 10%;

@@ -1,4 +1,5 @@
 .modalContent {
+    z-index: 10;
     width: 100%;
     height: 100%;
     display: flex;
@@ -13,6 +14,12 @@
     width: 100%;
     text-align: center;
 }
+.PList{
+    margin: 10px;
+}
+.CBtn{
+    margin: 10px;
+}
 
 .modalBody {
     flex: 1 1 auto;
@@ -25,6 +32,7 @@
 .challengeList {
     max-height: 200px;
     overflow-y: auto;
+    margin: 10px;
 }
 
 .CertificationImg {
@@ -33,10 +41,11 @@
 }
 
 .AuthButton {
-    margin: 5px 5px;
+    margin: 5px 20px;
     border: none;
     background-color: #00aeda;
     border-radius: 10%;
+    cursor: pointer;
 }
 
 .customModal {

@@ -1,23 +1,15 @@
-import {BottomNavigation, BottomNavigationAction, Box, IconButton, InputAdornment, Stack, TextField} from '@mui/material';
+import {Stack} from '@mui/material';
 import styles from './css_module/CommunityPost.module.css'
 import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Pagination } from '@mui/material';
-import PostCreate from './PostCreate';
 import PostModal from './PostModal';
 import { postApi } from "../../api/services/post";
-import Swal from 'sweetalert2';
-import SearchIcon from '@mui/icons-material/Search';
-import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import { useAuth } from '../../hooks/useAuth';
 import { getRelativeTime } from '../../utils/date';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
-import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive';
-import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
-import PlaceIcon from '@mui/icons-material/Place';
-import MoodIcon from '@mui/icons-material/Mood';
-import HailIcon from '@mui/icons-material/Hail';
+import OneMain from "../homes/components/OneMain";
+import PostCreate from "./PostCreate";
 
 const CommunityPost = () => {
     const { logout } = useAuth();
@@ -92,13 +84,22 @@ const CommunityPost = () => {
     };
 
     return (
-        <section className={styles.notice}>
-            <div
-                onClick={()=>navigate("/")}
-                className={styles.paramTitle}>{params.title}
+        <>
+            <OneMain/>
+            <section className={styles.notice}>
+            <div>
+                <div
+                    className={styles.paramTitle1}
+                        onClick={()=>navigate("/community")}
+                    >community
+                </div>
+                <div
+                    className={styles.paramTitle2}>{params.title}
+                </div>
             </div>
-
-
+            <div className={styles.postCreate}>
+                <PostCreate commId={commId} setPosts={setPosts} posts={posts} setOriginalPosts={setOriginalPosts}/>
+            </div>
             <div id={styles.boardList}>
                 <div className={styles.container}>
                     <table className={styles.boardTable}>
@@ -148,6 +149,9 @@ const CommunityPost = () => {
             }
 
         </section>
+
+        </>
+
     );
 }
 

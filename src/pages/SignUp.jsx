@@ -58,10 +58,6 @@ export default function SignUp() {
     });
     return (
         <>
-        <img 
-            src={`${process.env.PUBLIC_URL}/main.jpg`}
-            style={{height:'300px', width:'100vw'}}
-        />
         <Container component="main" maxWidth="xs" sx={{marginBottom:'40px'}}>
             <CssBaseline />
             <Box

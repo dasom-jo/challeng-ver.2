@@ -75,9 +75,9 @@ export default function PostCreate({commId, setPosts, posts, setOriginalPosts}) 
 
     return (
         <React.Fragment>
-            <Button variant="contained" endIcon={<UploadIcon />} onClick={handleClickOpen} style={{height:'56px', backgroundColor: '#00aeda'}}>
+            <button variant="contained"  onClick={handleClickOpen} style={{background:"transparent",}}>
                 게시글 등록
-            </Button>
+            </button>
 
             <Dialog
             open={open}

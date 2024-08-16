@@ -158,7 +158,9 @@ export default function CommunityPostModal({
         action={
           loginUser && loginUser !== postDetail.UserId ? (
             myFollowing?.findIndex((f) => f.id === postDetail.UserId) !== -1 ? (
-              <Button onClick={() => unfollowUser(postDetail.UserId)}>
+              <Button
+              sx={{ display:"flex",justifyContent:"center",alignItems:"center"}}
+                onClick={() => unfollowUser(postDetail.UserId)}>
                 팔로우 취소
               </Button>
             ) : (
@@ -175,7 +177,7 @@ export default function CommunityPostModal({
       <CardMedia
         component="img"
         // height="200"
-        style={{ width: "100%", cursor: "pointer" }}
+        style={{ width: "300px", cursor: "pointer" }}
         title="클릭하면 확대된 사진을 볼 수 있어요"
         image={`http://localhost:8000/${postDetail.img}`}
         onClick={handleClick}

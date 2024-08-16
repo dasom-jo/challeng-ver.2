@@ -11,16 +11,16 @@ const MadeChallenge = () => {
 
     return (
         <div>
+            <MadeChallengeModal
+                isOpen={isOpen}
+                CloseModal={CloseModal}
+            />
             <button
                 className={myButtons.MadeChallenge}
                 onClick={OpenModal}
             >
             챌린지개설
             </button>
-            <MadeChallengeModal
-                isOpen={isOpen}
-                CloseModal={CloseModal}
-            />
         </div>
     );
 }
@@ -113,9 +113,13 @@ export const MadeChallengeModal = ({ isOpen, CloseModal }) => {
                     </div>
                     <div>
                         <label>챌린지 기간</label>
-                        <input type="date" onChange={handleStartDateChange}></input>
+                        <input
+                            className={madeChallenge.labelinput}
+                            type="date" onChange={handleStartDateChange}></input>
                         -
-                        <input type="date" onChange={handleEndDateChange}></input>
+                        <input
+                            className={madeChallenge.labelinput}
+                            type="date" onChange={handleEndDateChange}></input>
                     </div>
                     <div>
                         <label>챌린지 소개</label>
