@@ -28,10 +28,10 @@
 웹에서 앱으로 전환하는 작업은 도전적이었지만, 웹과 앱 구조에 대한 깊은 이해를 얻는 데 큰 도움이 되었습니다. 미디어 쿼리를 활용하여 화면 너비에 따라 레이아웃을 조정하는 과정에서 반응형 디자인의 기본을 익혔으며, 다양한 반응형 단계에서 발생하는 레이아웃 문제를 해결하면서 `position`에 대한 이해도를 높일 수 있었습니다. 특히, 웹보다 작은 화면에서 필수적인 정보만을 고려하여 앱 UI를 설계하는 경험이 유익했습니다.
 
 ## 6. 결과물
-<video width="425" height="800" controls>
-  <source src="https://github.com/user-attachments/assets/111eee09-4bb0-45bf-bee9-d8bd96b1b865" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/111eee09-4bb0-45bf-bee9-d8bd96b1b865
+
+
+
 
 
 
