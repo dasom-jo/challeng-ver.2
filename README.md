@@ -1,70 +1,17 @@
-# Getting Started with Create React App 
+CHALLEN.GG - VER.2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts  
-.
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.챌린지지 버전 2 란?
+: 팀프로젝트 당시 작업한 건강 관리 어플 챌린지지는 기간상의 문제로 기획했던 부분을 모두 완성하지못하고 끝을 내야했습니다.
+그부분에 아쉬움을 느껴 부족한 부분을 개인 프로젝트로 변경하여 재구성하였습니다.
+전 프로젝트주소  ==> https://github.com/JOY-org/CHALLEN.GG_FE.git
+<BR/>
+2.변경부분
+- 데스크탑 전용 UI에서 반응형 UI로 변경
+- 홈페이지,마이페이지,쇼핑몰,커뮤니티페이지에서 쇼핑몰페이지 제거및 포인트제도 삭제
+3.변경한 이유
+  -건강어플리케이션 특성상 데스크탑의이용보다는 스마트폰 이용자가 많기에 반드시 반응형 UI도 필수라고생각됩니다.
+  -건강어플리케이션이 중점인데 쇼핑몰은 저희 목적에 부합하지않고  이용자들에서 저희 앱의 정체성에대해 혼란을 야기할거라 생각됩니다.
+4.사용 기술
+  HTML,CSS모듈,JS,React
+5. 느낀점
+  완성된 웹에서 앱으로 전환하는 작업은 어려웠지만 오히려 웹과 앱의 구조를 이해하는데 큰도움이되었습니다. 미디어 쿼리를 이용해 화면의 너비에 따라 레이아웃을 나누는 작업은 반응형 디자인의 기본을 배우는 데 도움이 되었으며, 각 반응형 단계별로 무너지는 레이아웃의 문제를 해결하면서 position에대한 깊은 이해를 하였습니다. 특히 웹보다 작은 화면에서 사용하는 앱에 대해 필수적인 정보만을 구상하다 보니, 앱 UI에 대한 이해도가 높아지는 좋은 경험이 되었습니다.
