@@ -31,7 +31,11 @@
 -반응형 CSS에 대한 이해: 반응형 디자인 원칙과 CSS를 통한 유연한 레이아웃 조정에 대한 이해를 높였습니다.
 
 ## 7. 결과물
- <img src="https://github.com/user-attachments/assets/111eee09-4bb0-45bf-bee9-d8bd96b1b865" width="500" height="800" style="object-fit: cover;" />
+<div >
+   <img src="https://github.com/user-attachments/assets/99ad4120-6f3d-445e-8bf2-74508dd6ddfc" width="400" height="700" style="object-fit: cover;" />
+</div>
+
+
 
 
 
