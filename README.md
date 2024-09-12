@@ -1,3 +1,4 @@
+![스크린샷 2024-06-08 105355](https://github.com/JOY-org/.github/assets/159886707/9ebefbf9-5b93-4b31-9768-f01833e3f4af)
 # CHALLEN.GG - VER.2
 
 ## 1. 챌린지지 버전 2란?
