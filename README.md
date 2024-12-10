@@ -2,7 +2,7 @@
 # CHALLEN.GG - VER.2
 
 <div >
-   <img src="https://github.com/user-attachments/assets/99ad4120-6f3d-445e-8bf2-74508dd6ddfc" width="400" height="700" style="object-fit: cover;" />
+   <img src="https://github.com/user-attachments/assets/99ad4120-6f3d-445e-8bf2-74508dd6ddfc" width="200" height="350" style="object-fit: cover;" />
 </div>
 
 ## 1. 챌린지지 버전 2란?
