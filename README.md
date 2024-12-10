@@ -1,6 +1,10 @@
 ![스크린샷 2024-06-08 105355](https://github.com/JOY-org/.github/assets/159886707/9ebefbf9-5b93-4b31-9768-f01833e3f4af)
 # CHALLEN.GG - VER.2
 
+<div >
+   <img src="https://github.com/user-attachments/assets/99ad4120-6f3d-445e-8bf2-74508dd6ddfc" width="400" height="700" style="object-fit: cover;" />
+</div>
+
 ## 1. 챌린지지 버전 2란?
 
 팀 프로젝트 당시 개발한 건강 관리 어플리케이션, **챌린지지**는 기획한 모든 기능을 완료하지 못하고마무리되었습니다. 이 아쉬움을 해결하기 위해 개인 프로젝트로 전환하여 부족한 부분을 보완하고 재구성하였습니다.
@@ -83,10 +87,7 @@
 
 04. 레이아웃의 유연성과 성능 최적화: 반응형 레이아웃 구현에서 필수적인 요소만 표시하도록 설계해 성능을 최적화하는 법을 배웠으며, 이를 통해 사용자 친화적인 반응형 디자인을 구축하는 경험을 쌓을 수 있었습니다.
 
-## 8. 결과물
-<div >
-   <img src="https://github.com/user-attachments/assets/99ad4120-6f3d-445e-8bf2-74508dd6ddfc" width="400" height="700" style="object-fit: cover;" />
-</div>
+
 
 
 
