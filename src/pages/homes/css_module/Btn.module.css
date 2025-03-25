@@ -1,100 +1,97 @@
 /* 버튼 공통 컴포넌트  */
 :root {
-
-    --font:#00aeda;
+  --font: #00aeda;
 }
 
 .btn {
-    margin: 10px;
-    width: 80px;
-    height: 50px;
-
+  margin: 10px;
+  width: 80px;
+  height: 50px;
 }
 
-
 .btn-open-line {
-    border: none;
-    transition: 0.3s;
-    position: relative;
+  border: none;
+  transition: 0.3s;
+  position: relative;
+  color: var(--font);
+  background-color: var(--btn-bg);
+  font-weight: bolder;
+  font-size: large;
+  color: white;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--btn-bg);
+    opacity: 0;
+    transform: scaleX(0);
+    transition: 0.4s ease-in-out;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &:hover {
     color: var(--font);
-    background-color: var(--btn-bg);
-    font-weight: bolder;
-    font-size: large;
-    color: white;
-    &::before,
-    &::after {
-        position: absolute;
-        content: "";
-        left: 0;
-        width: 100%;
-        height: 1px;
-        background: var(--btn-bg);
-        opacity: 0;
-        transform: scaleX(0);
-        transition: 0.4s ease-in-out;
-    }
-
-    &::before {
-        top: 0;
-    }
-
-    &::after {
-        bottom: 0;
-    }
-
-    &:hover {
-
-        color: var(--font);
-    }
+  }
 }
 
 @keyframes jittery {
-    5%, 50% {
-        transform: scale(1);
-    }
-    10% {
-        transform: scale(0.9);
-    }
-    15% {
-        transform: scale(1.15);
-    }
-    20% {
-        transform: scale(1.15) rotate(-5deg);
-    }
-    25% {
-        transform: scale(1.15) rotate(5deg);
-    }
-    30% {
-        transform: scale(1.15) rotate(-3deg);
-    }
-    35% {
-        transform: scale(1.15) rotate(2deg);
-    }
-    40% {
-        transform: scale(1.15) rotate(0);
-    }
+  5%,
+  50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1.15) rotate(2deg);
+  }
+  40% {
+    transform: scale(1.15) rotate(0);
+  }
 }
 
 @keyframes jelly {
-    25% {
-        transform: scale(0.9, 1.1);
-    }
-    50% {
-        transform: scale(1.1, 0.9);
-    }
-    75% {
-        transform: scale(0.95, 1.05);
-    }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
 }
 
 @keyframes pulse {
-    from {
-        box-shadow: 0 0 0 0 var(--btn-bg);
-    }
+  from {
+    box-shadow: 0 0 0 0 var(--btn-bg);
+  }
 }
 
 @keyframes move-left {
-    to {
-        transform: translateX(-100%);
-    }
+  to {
+    transform: translateX(-100%);
+  }
 }

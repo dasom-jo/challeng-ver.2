@@ -1,19 +1,18 @@
-import kcal from "./css_module/Kcal.module.css"
+import kcal from "./css_module/Kcal.module.css";
 import * as React from "react";
 import { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import moment from "moment";
-import Modal from 'react-modal';
+import Modal from "react-modal";
 import { userApi } from "../../api/services/user";
-import Box from '@mui/material/Box';
-
+import Box from "@mui/material/Box";
 
 // 마이페이지의 칼로리 달력 코드입니다
 // 칼로리달력, 칼로리 계산 모달창
 
 const Kcal = () => {
-  const token = localStorage.getItem("token")
+  const token = localStorage.getItem("token");
   const [value, setValue] = useState(new Date());
 
   const [isOpen, setIsOpen] = useState(false);
@@ -27,14 +26,14 @@ const Kcal = () => {
     setSelectedDate(value);
   };
 
-  const todayKcal = async() => {
+  const todayKcal = async () => {
     try {
-        const res = await userApi.getCalorie(token);
-        setDateKcal(res.data.payload);
+      const res = await userApi.getCalorie(token);
+      setDateKcal(res.data.payload);
     } catch (err) {
       console.error(err);
     }
-  }
+  };
 
   useEffect(() => {
     todayKcal();
@@ -44,9 +43,9 @@ const Kcal = () => {
     <Box
       className={kcal.Kcal}
       sx={{
-        '.react-calendar': { ...kcal.reactCalendar },
-        '.react-calendar__tile': { ...kcal.reactCalendarTile }
-    }}
+        ".react-calendar": { ...kcal.reactCalendar },
+        ".react-calendar__tile": { ...kcal.reactCalendarTile },
+      }}
     >
       <Calendar
         value={value}
@@ -78,8 +77,7 @@ export default Kcal;
 Modal.setAppElement("#root");
 
 const KcalCalc = ({ isOpen, handleOpen, handleClose, selectedDate }) => {
-
-  const token = localStorage.getItem("token")
+  const token = localStorage.getItem("token");
   const [morning, setMorning] = useState(0);
   const [lunch, setLunch] = useState(0);
   const [dinner, setDinner] = useState(0);
@@ -87,12 +85,12 @@ const KcalCalc = ({ isOpen, handleOpen, handleClose, selectedDate }) => {
 
   const [Kcal, setKcal] = useState(0);
 
-  const sumKcal = async() => {
+  const sumKcal = async () => {
     try {
       const totalCalories = morning + lunch + dinner + snack;
       const data = {
         date: selectedDate,
-        sum: totalCalories
+        sum: totalCalories,
       };
       const res = await userApi.uploadCalorie(data, token);
       setKcal(res.data.payload.sum);
@@ -100,7 +98,6 @@ const KcalCalc = ({ isOpen, handleOpen, handleClose, selectedDate }) => {
       console.error(err);
     }
   };
-
 
   return (
     <div>
@@ -145,13 +142,12 @@ const KcalCalc = ({ isOpen, handleOpen, handleClose, selectedDate }) => {
             onChange={(e) => setSnack(parseInt(e.target.value))}
           />
         </div>
-        <div  className={kcal.btn3}>
-          <button onClick={sumKcal} className={kcal.btn4}>계산하기</button>
+        <div className={kcal.btn3}>
+          <button onClick={sumKcal} className={kcal.btn4}>
+            계산하기
+          </button>
           <p className={kcal.sum}>총 칼로리: {Kcal}Kcal</p>
-          <button
-            type="submit"
-            onClick={handleClose}
-            className={kcal.btn4}>
+          <button type="submit" onClick={handleClose} className={kcal.btn4}>
             저장하기
           </button>
         </div>

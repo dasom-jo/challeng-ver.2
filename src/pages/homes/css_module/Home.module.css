@@ -1,48 +1,49 @@
 /* General Styles */
 @font-face {
-    font-family: 'Giants-Bold';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Giants-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 * {
-    font-family: 'Giants-Bold';
-    box-sizing: border-box;
-    margin: 0;
-    overflow: hidden;
+  font-family: "Giants-Bold";
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
 }
 
 .HomeMobile {
-    position: absolute;
-    top: 0;
-    right: 20%;
-    max-width: 425px;
-    height: 100vh;
-    background: linear-gradient(to bottom, #A2EBFD, #032B35);
-    z-index: 5;
-    overflow-y: auto;
-    overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  right: 20%;
+  max-width: 425px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #a2ebfd, #032b35);
+  z-index: 5;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1024px) {
-    .HomeMobile {
-        width: 100vw;
-        max-width: 425px;
-        height: 100vh;
-        background: linear-gradient(to bottom, #A2EBFD, #032B35);
-        left: 50%;
-        transform: translateX(-50%);
-        right: auto;
-    }
+  .HomeMobile {
+    width: 100vw;
+    max-width: 425px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #a2ebfd, #032b35);
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+  }
 }
 
-.HomeTitle{
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    max-width: 400px;
-    margin: 20px;
+.HomeTitle {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 400px;
+  margin: 20px;
 }

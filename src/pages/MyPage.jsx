@@ -1,9 +1,7 @@
 import MyInfo from "./mypages/MyInfo";
 
 const MyPage = () => {
-    return (
-        <MyInfo/>
-    );
-}
+  return <MyInfo />;
+};
 
 export default MyPage;

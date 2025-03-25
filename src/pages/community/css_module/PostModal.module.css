@@ -1,7 +1,5 @@
-
-
-.dialogContent{
-    max-width: 425px;
-    border-top:10px solid #00aeda ;
-    border-bottom:10px solid #00aeda ;
+.dialogContent {
+  max-width: 425px;
+  border-top: 10px solid #00aeda;
+  border-bottom: 10px solid #00aeda;
 }

@@ -1,14 +1,13 @@
-.Buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+.Buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
-.MadeChallenge{
-    background-color: #00aeda;
-    border: none;
-    padding: 5px;
-    width: 100px;
-    border-radius: 20px;
+.MadeChallenge {
+  background-color: #00aeda;
+  border: none;
+  padding: 5px;
+  width: 100px;
+  border-radius: 20px;
 }
-

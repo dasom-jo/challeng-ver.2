@@ -48,14 +48,15 @@ export default function Challenge({ challengeList }) {
       onClick={onClick}
       className="cursor-pointer "
       style={{
-        fontSize: '30px',
-        position: 'absolute',
-        top: '50%',
-        left: '15px',
-        zIndex: 10 ,
-        cursor:"pointer",
-        color:'white'}}
-      >
+        fontSize: "30px",
+        position: "absolute",
+        top: "50%",
+        left: "15px",
+        zIndex: 10,
+        cursor: "pointer",
+        color: "white",
+      }}
+    >
       ⟪
     </div>
   );
@@ -65,54 +66,54 @@ export default function Challenge({ challengeList }) {
       onClick={onClick}
       className="cursor-pointer"
       style={{
-        fontSize: '30px',
-        position: 'absolute',
-        top: '50%',
-        left: '380px',
+        fontSize: "30px",
+        position: "absolute",
+        top: "50%",
+        left: "380px",
         zIndex: 10,
-        cursor:"pointer",
-        color:'white'}}
-      >
+        cursor: "pointer",
+        color: "white",
+      }}
+    >
       ⟫
     </div>
   );
 
   return (
-<Carousel
-  swipeable={true}
-  draggable={false}
-  showDots={false}
-  responsive={responsive}
-  infinite={true}
-  autoPlaySpeed={1000}
-  keyBoardControl={true}
-  customTransition="all .5"
-  transitionDuration={500}
-  containerClass="carousel-container"
-  dotListClass="custom-dot-list-style"
-  itemClass="carousel-item-padding-10-px"
-  arrows
-  customLeftArrow={<CustomLeftArrow />}
-  customRightArrow={<CustomRightArrow />}
-  style={{ position: 'relative' }} // 추가적인 스타일링
->
-  {challengeList?.map((challenge) => (
-    <ChallengeCard
-      key={challenge.id}
-      challenge={challenge}
-      handleOpen={handleOpen}
-      loginUser={loginUser}
-    />
-  ))}
-  {challengeDetail && (
-    <ChallengeModal
-      isModalOpen={isModalOpen}
-      handleClose={handleClose}
-      challenge={challengeDetail}
-    />
-  )}
-</Carousel>
-
+    <Carousel
+      swipeable={true}
+      draggable={false}
+      showDots={false}
+      responsive={responsive}
+      infinite={true}
+      autoPlaySpeed={1000}
+      keyBoardControl={true}
+      customTransition="all .5"
+      transitionDuration={500}
+      containerClass="carousel-container"
+      dotListClass="custom-dot-list-style"
+      itemClass="carousel-item-padding-10-px"
+      arrows
+      customLeftArrow={<CustomLeftArrow />}
+      customRightArrow={<CustomRightArrow />}
+      style={{ position: "relative" }} // 추가적인 스타일링
+    >
+      {challengeList?.map((challenge) => (
+        <ChallengeCard
+          key={challenge.id}
+          challenge={challenge}
+          handleOpen={handleOpen}
+          loginUser={loginUser}
+        />
+      ))}
+      {challengeDetail && (
+        <ChallengeModal
+          isModalOpen={isModalOpen}
+          handleClose={handleClose}
+          challenge={challengeDetail}
+        />
+      )}
+    </Carousel>
   );
 }
 
@@ -165,51 +166,59 @@ const ChallengeCard = ({ challenge, handleOpen, loginUser }) => {
     <div>
       <Card
         className={ChallengesList.ChallengeCard}
-        sx={{ width: 300, boxShadow: "5px 5px 20px 1px gray" ,
-            }}
+        sx={{ width: 300, boxShadow: "5px 5px 20px 1px gray" }}
       >
-      <CardActionArea onClick={() => handleOpen(challenge)} >
-        <CardMedia
-          component="img"
-          height="200"
-          image={`http://localhost:8000${challenge.img}`}
-          alt="챌린지사진"
-        />
-        <CardContent>
-          <Typography
-            sx={{ fontFamily: "Giants-Bold" }}
-            gutterBottom
-            variant="h5"
-            component="div"
-          >
-            {challenge.name}
-          </Typography>
-          <Typography variant="body2" sx={{ fontFamily: "Giants-Bold" }}>
-            시작일: {challenge.startDay}
-            <br />
-            완료일: {challenge.endDay}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <Typography style={{ maxWidthidth:"10px"}}>
-        {loginUser ? (
-          starLike ? (
-            <RiStarSmileFill
-              onClick={() => handleUnstar(challenge)}
-              style={{ fontSize: "30px", margin: "10px", color: "yellow",maxWidth:"500px" }}
-            />
+        <CardActionArea onClick={() => handleOpen(challenge)}>
+          <CardMedia
+            component="img"
+            height="200"
+            image={`http://localhost:8000${challenge.img}`}
+            alt="챌린지사진"
+          />
+          <CardContent>
+            <Typography
+              sx={{ fontFamily: "Giants-Bold" }}
+              gutterBottom
+              variant="h5"
+              component="div"
+            >
+              {challenge.name}
+            </Typography>
+            <Typography variant="body2" sx={{ fontFamily: "Giants-Bold" }}>
+              시작일: {challenge.startDay}
+              <br />
+              완료일: {challenge.endDay}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <Typography style={{ maxWidthidth: "10px" }}>
+          {loginUser ? (
+            starLike ? (
+              <RiStarSmileFill
+                onClick={() => handleUnstar(challenge)}
+                style={{
+                  fontSize: "30px",
+                  margin: "10px",
+                  color: "yellow",
+                  maxWidth: "500px",
+                }}
+              />
+            ) : (
+              <RiStarSmileFill
+                onClick={() => handleStar(challenge)}
+                style={{
+                  fontSize: "30px",
+                  margin: "10px",
+                  color: "black",
+                  maxWidth: "500px",
+                }}
+              />
+            )
           ) : (
-            <RiStarSmileFill
-              onClick={() => handleStar(challenge)}
-              style={{ fontSize: "30px", margin: "10px", color: "black" ,maxWidth:"500px" }}
-            />
-          )
-        ) : (
-          ""
-        )}
-      </Typography>
-    </Card>
+            ""
+          )}
+        </Typography>
+      </Card>
     </div>
-
   );
 };

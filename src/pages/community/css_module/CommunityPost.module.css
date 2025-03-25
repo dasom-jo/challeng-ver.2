@@ -1,222 +1,216 @@
 @font-face {
-    font-family: 'WavvePADO-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "WavvePADO-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.notice{
-    position: absolute;
-    top: 0;
-    right: 20%;
-    max-width: 425px; /* 최대 너비 425px */
-    width: 425px;
-    height: 100vh;
-    z-index: 7;
-    display:inline-block;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.863);
+.notice {
+  position: absolute;
+  top: 0;
+  right: 20%;
+  max-width: 425px; /* 최대 너비 425px */
+  width: 425px;
+  height: 100vh;
+  z-index: 7;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.863);
 }
 
-.paramTitle1{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 50px;
-    margin-top: 20px;
-    background: linear-gradient(to bottom, #A2EBFD, #032B35);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.paramTitle1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 50px;
+  margin-top: 20px;
+  background: linear-gradient(to bottom, #a2ebfd, #032b35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.paramTitle2{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+.paramTitle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 @media (max-width: 1024px) {
-    .notice {
-        display:inline-block;
-        justify-content: center;
-        align-items: center;
-        right: 0; /* 오른쪽 0% */
-        left: 0; /* 왼쪽 0% */
-        width: 100vw; /* 화면 너비에 맞추기 */
-        max-width: 425px; /* 최대 너비 제한 해제 */
-        height: 100vh; /* 전체 높이 */
-    }
-}
-.postCreate{
-    display:flex;
+  .notice {
+    display: inline-block;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    right: 0; /* 오른쪽 0% */
+    left: 0; /* 왼쪽 0% */
+    width: 100vw; /* 화면 너비에 맞추기 */
+    max-width: 425px; /* 최대 너비 제한 해제 */
+    height: 100vh; /* 전체 높이 */
+  }
+}
+.postCreate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 section.notice {
-    padding: 0;
+  padding: 0;
 }
 
-
-
 .boardTable {
-    font-size: 13px;
-    min-width: 425px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+  font-size: 13px;
+  min-width: 425px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .boardTable a {
-    color: #333;
-    display: inline-block;
-    line-height: 1.4;
-    word-break: break-all;
-    vertical-align: middle;
+  color: #333;
+  display: inline-block;
+  line-height: 1.4;
+  word-break: break-all;
+  vertical-align: middle;
 }
 
 .boardTable a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .boardTable th {
-    text-align: center;
+  text-align: center;
 }
 
 .boardTable .thNum {
-
-    text-align: center;
+  text-align: center;
 }
 
 .boardTable tbody td {
-    border-top: 1px solid #e7e7e7;
-    text-align: center;
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
 }
 
 .boardTable tbody th {
-
-    border-top: 1px solid #e7e7e7;
-    text-align: left;
+  border-top: 1px solid #e7e7e7;
+  text-align: left;
 }
 
 .boardTable tbody th p {
-    display: none;
+  display: none;
 }
 
 .btn {
-    display: inline-block;
-    padding: 0 30px;
-    font-size: 15px;
-    font-weight: 400;
-    background: transparent;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    text-transform: uppercase;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 15px;
+  font-weight: 400;
+  background: transparent;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-dark {
-    background: #555;
-    color: #fff;
+  background: #555;
+  color: #fff;
 }
 
 .btn-dark:hover,
 .btn-dark:focus {
-    background: #373737;
-    border-color: #373737;
-    color: #fff;
+  background: #373737;
+  border-color: #373737;
+  color: #fff;
 }
 
 .btn-dark {
-    background: #555;
-    color: #fff;
+  background: #555;
+  color: #fff;
 }
 
 .btn-dark:hover,
 .btn-dark:focus {
-    background: #373737;
-    border-color: #373737;
-    color: #fff;
+  background: #373737;
+  border-color: #373737;
+  color: #fff;
 }
 
 .clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
-
-
 
 .blind {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    margin: -1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
 
-    height: 1px;
+  height: 1px;
 }
 
-.page{
-    text-align: center;
+.page {
+  text-align: center;
 }
 
-.post{
-    cursor: pointer;
+.post {
+  cursor: pointer;
 }
-.post:hover{
-    background-color: #f3f2f2;
-}
-
-
-.commentColor{
-    color: green;
-    font-weight: 400;
-    margin-left: 5px;
+.post:hover {
+  background-color: #f3f2f2;
 }
 
-.postLike{
-    color: red;
-    font-weight: bold;
-    font-size: 14px;
+.commentColor {
+  color: green;
+  font-weight: 400;
+  margin-left: 5px;
 }
 
-.searchIcon{
-    color: #00aeda;
+.postLike {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
 }
 
-.resetIcon{
-    color: rgb(241, 137, 137);
+.searchIcon {
+  color: #00aeda;
 }
 
-.postTitle{
-    font-size: 16px;
+.resetIcon {
+  color: rgb(241, 137, 137);
 }
 
-#boardList{
-    height: 100vh;
-    margin-bottom: 30px;
+.postTitle {
+  font-size: 16px;
+}
+
+#boardList {
+  height: 100vh;
+  margin-bottom: 30px;
 }

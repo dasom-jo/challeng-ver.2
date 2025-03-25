@@ -1,62 +1,58 @@
-
 .messageHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    text-align: center;
-    font-size: 15px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+  font-size: 15px;
+}
 
-    .Messages {
-    padding: 16px;
-    height: 700px;
-    overflow: auto;
-    background: #c7ecf5
-    }
+.Messages {
+  padding: 16px;
+  height: 700px;
+  overflow: auto;
+  background: #c7ecf5;
+}
 
-    .messageContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.messageContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1px;
+  padding: 5px 20px;
+}
+
+.Message {
+  margin-bottom: 1px;
+  flex-grow: 1;
+}
+
+.deleteButton {
+  margin-left: 10px;
+  margin-bottom: 1px;
+  background-color: white;
+  border: none;
+  padding: 5px;
+  width: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .Message {
     margin-bottom: 1px;
-    padding: 5px 20px;
-
-    }
-
-    .Message {
-        margin-bottom: 1px;
-        flex-grow: 1;
-    }
-
-    .deleteButton {
+    flex-grow: 1;
+    font-size: 12px;
+  }
+  .deleteButton {
     margin-left: 10px;
-    margin-bottom: 1px;
+    margin-bottom: 3px;
     background-color: white;
     border: none;
-    padding: 5px;
-    width: 50px;
+    font-size: 10px;
+    padding: 3px;
+    width: 30px;
     border-radius: 5px;
     cursor: pointer;
-    }
-
-@media (max-width:425px){
-    .Message {
-        margin-bottom: 1px;
-        flex-grow: 1;
-        font-size: 12px;
-    }
-    .deleteButton {
-        margin-left: 10px;
-        margin-bottom: 3px;
-        background-color: white;
-        border: none;
-        font-size: 10px;
-        padding: 3px;
-        width: 30px;
-        border-radius: 5px;
-        cursor: pointer;
-        }
-
-
+  }
 }

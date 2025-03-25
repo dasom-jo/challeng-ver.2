@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 import ModeCommentIcon from "@mui/icons-material/ModeComment";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import {Button} from "@mui/material";
+import { Button } from "@mui/material";
 import { useAuth } from "../../hooks/useAuth";
 import Swal from "sweetalert2";
 import { useState } from "react";
@@ -29,7 +29,6 @@ export default function CommunityPostModal({
   setPostComment,
   getComment,
 }) {
-
   const { loginUser } = useAuth();
   const [pressedLike, setPressedLike] = useState();
   const [myFollowing, setMyFollowing] = useState();
@@ -54,7 +53,7 @@ export default function CommunityPostModal({
     try {
       const res = await userApi.getFollowings(
         id,
-        localStorage.getItem("token")
+        localStorage.getItem("token"),
       );
       setMyFollowing(res.data.payload);
     } catch (error) {
@@ -95,7 +94,7 @@ export default function CommunityPostModal({
     try {
       const res = await postApi.getLikedPostsByUserId(
         id,
-        localStorage.getItem("token")
+        localStorage.getItem("token"),
       );
       setPressedLike(res.data.payload);
     } catch (error) {
@@ -136,7 +135,7 @@ export default function CommunityPostModal({
     window.open(
       `http://localhost:8000/${postDetail.img}`,
       "_blank",
-      "noopener,noreferrer"
+      "noopener,noreferrer",
     );
   };
 
@@ -159,8 +158,13 @@ export default function CommunityPostModal({
           loginUser && loginUser !== postDetail.UserId ? (
             myFollowing?.findIndex((f) => f.id === postDetail.UserId) !== -1 ? (
               <Button
-              sx={{ display:"flex",justifyContent:"center",alignItems:"center"}}
-                onClick={() => unfollowUser(postDetail.UserId)}>
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                onClick={() => unfollowUser(postDetail.UserId)}
+              >
                 팔로우 취소
               </Button>
             ) : (
@@ -217,7 +221,7 @@ export default function CommunityPostModal({
           ) : null}
 
           <IconButton onClick={toggleComment}>
-            <ModeCommentIcon sx={{color:'#4483FD'}}/>
+            <ModeCommentIcon sx={{ color: "#4483FD" }} />
           </IconButton>
         </div>
         {loginUser == postDetail.UserId && (
@@ -225,7 +229,13 @@ export default function CommunityPostModal({
         )}
       </CardActions>
       <CardActions>
-        {showComment && <PostComment postComment={postComment} setPostComment={setPostComment} postDetail={postDetail}/>}
+        {showComment && (
+          <PostComment
+            postComment={postComment}
+            setPostComment={setPostComment}
+            postDetail={postDetail}
+          />
+        )}
       </CardActions>
     </Card>
   );

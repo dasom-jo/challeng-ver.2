@@ -1,13 +1,14 @@
 @font-face {
-    font-family: 'WavvePADO-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "WavvePADO-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.container{
-    font-family: 'WavvePADO-Regular';
-    font-size: 32px;
-    text-align: center;
-    padding: auto;
+.container {
+  font-family: "WavvePADO-Regular";
+  font-size: 32px;
+  text-align: center;
+  padding: auto;
 }

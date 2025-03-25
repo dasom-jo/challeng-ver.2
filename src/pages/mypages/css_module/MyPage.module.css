@@ -1,19 +1,18 @@
-.mainImg{
-    height: 300px;
-    width: 100%;
-    position: relative;
-    z-index: 1;
+.mainImg {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
-.mainText{
-    position: absolute;
-    top:10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    color: white;
-    z-index: 2;
-    font-weight: 600;
-    font-size: 80px;
-    border-bottom: 10px solid white;
+.mainText {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  color: white;
+  z-index: 2;
+  font-weight: 600;
+  font-size: 80px;
+  border-bottom: 10px solid white;
 }
-

@@ -1,85 +1,87 @@
 .container {
-    box-sizing: border-box;
-    z-index: 1;
-    min-width: 425px;
-
+  box-sizing: border-box;
+  z-index: 1;
+  min-width: 425px;
 }
 
 .comtainerMain {
-    position: absolute;
-    top: 0;
-    right: 20%; /* 데스크탑에서 오른쪽 20% 위치에 고정 */
-    max-width: 425px; /* 최대 너비 425px */
-    width: 425px; /* 고정된 너비 */
-    height: 100vh;
-    background: linear-gradient(to bottom, #A2EBFD, #032B35);
-    z-index: 7;
-    overflow-y: auto;
-
+  position: absolute;
+  top: 0;
+  right: 20%; /* 데스크탑에서 오른쪽 20% 위치에 고정 */
+  max-width: 425px; /* 최대 너비 425px */
+  width: 425px; /* 고정된 너비 */
+  height: 100vh;
+  background: linear-gradient(to bottom, #a2ebfd, #032b35);
+  z-index: 7;
+  overflow-y: auto;
 }
 
 .CommunityContainer {
-    top: 10px;
-    margin: 25px 80px;
-    width: 60%;
-    height: 70%;
-    padding-top: 60px;
-    overflow-y: auto;
+  top: 10px;
+  margin: 25px 80px;
+  width: 60%;
+  height: 70%;
+  padding-top: 60px;
+  overflow-y: auto;
 }
 /* 전체 스크롤바 */
 .CommunityContainer::-webkit-scrollbar {
-    width: 0px;  /* 스크롤바의 너비 */
+  width: 0px; /* 스크롤바의 너비 */
 }
 
 .header {
-    z-index: 2;
-    bottom: 0;
+  z-index: 2;
+  bottom: 0;
 }
 .communityText1 {
-    font-size: 40px;
-    text-align: center;
-    color: white;
-    padding-top: 20px;
-    cursor: pointer;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  cursor: pointer;
 }
 
 .communityText2 {
-    font-size: 60px;
-    text-align: center;
-    color: white;
+  font-size: 60px;
+  text-align: center;
+  color: white;
 }
 
 @media (max-width: 1024px) {
-    .comtainerMain {
-        position: fixed; /* 화면에 고정 */
-        right: 0; /* 오른쪽 0% */
-        left: 0; /* 왼쪽 0% */
-        width: 100vw; /* 화면 너비에 맞추기 */
-        max-width: 425px; /* 최대 너비 제한 해제 */
-        height: 100vh; /* 전체 높이 */
-        background: linear-gradient(to bottom, #A2EBFD, #032B35); /* 배경을 화면에 꽉 차게 */
-    }
+  .comtainerMain {
+    position: fixed; /* 화면에 고정 */
+    right: 0; /* 오른쪽 0% */
+    left: 0; /* 왼쪽 0% */
+    width: 100vw; /* 화면 너비에 맞추기 */
+    max-width: 425px; /* 최대 너비 제한 해제 */
+    height: 100vh; /* 전체 높이 */
+    background: linear-gradient(
+      to bottom,
+      #a2ebfd,
+      #032b35
+    ); /* 배경을 화면에 꽉 차게 */
+  }
 }
 
 .girlImg {
-    width: 100%;
-    min-height: 100vh;
-    object-fit: cover;
-    z-index: 1;
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .Home {
-    position: relative;
-    margin: 0;
-    background-color: #f2f5fa;
-    z-index: 1;
-    overflow: hidden;
+  position: relative;
+  margin: 0;
+  background-color: #f2f5fa;
+  z-index: 1;
+  overflow: hidden;
 }
 
-@media (max-width:1024px) {
-    .girlImg {
-        display: none;
-    }
+@media (max-width: 1024px) {
+  .girlImg {
+    display: none;
+  }
 }

@@ -1,37 +1,34 @@
 .ChallengeManag {
-    margin: 20px;
-    padding: 10px;
+  margin: 20px;
+  padding: 10px;
 }
 
 .ChallengeMap {
-    height: 200px;
-    overflow: auto;
+  height: 200px;
+  overflow: auto;
 }
 
-
 .btn1 {
-
-    height: 50px;
-    width: 350px;
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    border-bottom: 3px solid #00aeda;
-    border-top: 3px solid #00aeda;
+  height: 50px;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom: 3px solid #00aeda;
+  border-top: 3px solid #00aeda;
 }
 
 .btn2 {
-    font-size: 15px;
-    border: 0;
-    background-color: transparent;
-    margin: 0px 10px;
-    cursor: pointer;
+  font-size: 15px;
+  border: 0;
+  background-color: transparent;
+  margin: 0px 10px;
+  cursor: pointer;
 }
 
 .ChallengeLists {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid gray;
-    margin: 10px 7px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  margin: 10px 7px;
 }
-

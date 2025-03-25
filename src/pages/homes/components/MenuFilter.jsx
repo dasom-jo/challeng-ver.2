@@ -9,7 +9,9 @@ const Menufilter = ({ setSortKey }) => {
   };
   return (
     <>
-      <div style={{ width: "425px", display:"flex",justifyContent:'center' }}>
+      <div
+        style={{ width: "425px", display: "flex", justifyContent: "center" }}
+      >
         {/* createdAt 최근순 */}
         <Btn btnEvent={() => handleFilterClick("신규")}>신규</Btn>
         {/* startDay가 현재날짜와 가장 가까운순 */}

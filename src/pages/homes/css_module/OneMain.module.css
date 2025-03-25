@@ -1,26 +1,27 @@
 @font-face {
-    font-family: 'Giants-Bold';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Giants-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* 가장최상단 주먹진 여자  */
 .girlImg {
-    width: 100%;
-    min-height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  position: relative;
+  overflow: hidden;
 }
 
 .Home {
-    position: relative;
-    margin: 0;
-    background-color: #f2f5fa;
-    z-index: 1;
-    overflow: hidden;
+  position: relative;
+  margin: 0;
+  background-color: #f2f5fa;
+  z-index: 1;
+  overflow: hidden;
 }
 
 /* 가장최상단 주먹진 여자 안의 텍스트  */
@@ -37,9 +38,8 @@
     font-weight: 600;
 } */
 
-@media (max-width:1024px){
-    .girlImg{
-        display: none;
-    }
+@media (max-width: 1024px) {
+  .girlImg {
+    display: none;
+  }
 }
-

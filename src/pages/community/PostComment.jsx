@@ -22,7 +22,7 @@ import Swal from "sweetalert2";
 import { useAuth } from "../../hooks/useAuth";
 import { getRelativeTime } from "../../utils/date";
 
-const PostComment = ({postComment, setPostComment, postDetail}) => {
+const PostComment = ({ postComment, setPostComment, postDetail }) => {
   const { loginUser } = useAuth();
   const [curPage, setCurPage] = useState(1);
   const [totalPage, setTotalPage] = useState();
@@ -42,7 +42,7 @@ const PostComment = ({postComment, setPostComment, postDetail}) => {
       };
       const res = await postApi.uploadComment(
         commentInput,
-        localStorage.getItem("token")
+        localStorage.getItem("token"),
       );
       if (res.data.code === 200) {
         setPostComment(res.data.payload);
@@ -52,9 +52,9 @@ const PostComment = ({postComment, setPostComment, postDetail}) => {
       }
     } catch (err) {
       Swal.fire({
-        text: '로그인 이후에 가능해요',
-        icon: "error"
-    });
+        text: "로그인 이후에 가능해요",
+        icon: "error",
+      });
     }
   };
 

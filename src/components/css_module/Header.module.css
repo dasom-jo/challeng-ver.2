@@ -1,11 +1,10 @@
 .HeaderClass {
-    bottom:0;
-    left: 0;
-    background-color:#00aeda;
-    max-width: 425px;
-    height: 10vh;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-
+  bottom: 0;
+  left: 0;
+  background-color: #00aeda;
+  max-width: 425px;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

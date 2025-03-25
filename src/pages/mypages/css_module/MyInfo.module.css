@@ -1,92 +1,92 @@
-.MyInfo{
-    position: absolute;
-    z-index: 200000;
-    top: 0;
-    right: 20%;
-    max-width: 425px;
-    width: 425px;
-    height: 100vh;
-    z-index: 0;
-    overflow-y: scroll;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.76)
+.MyInfo {
+  position: absolute;
+  z-index: 200000;
+  top: 0;
+  right: 20%;
+  max-width: 425px;
+  width: 425px;
+  height: 100vh;
+  z-index: 0;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.76);
 }
 .MyInfo::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
 @media (max-width: 1024px) {
-    .MyInfo {
-        display:inline-block;
-        justify-content: center;
-        align-items: center;
-        right: 0;
-        left: 0;
-        width: 100vw;
-        max-width: 425px;
-        height: 100vh;
-    }
-}
-.text1{
-    display: flex;
+  .MyInfo {
+    display: inline-block;
     justify-content: center;
     align-items: center;
-    margin-top: 20PX;
-    font-size: 30px;
-    cursor: pointer;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 425px;
+    height: 100vh;
+  }
 }
-.text2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    cursor: pointer;
+.text1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 30px;
+  cursor: pointer;
 }
-.Info1{
-    margin: 40px 40px;
-    padding: 10px;
-    background-color: #00aeda;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 450px;
+.text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
 }
-.MyInfos{
-    width: 300px;
-    text-align: center;
+.Info1 {
+  margin: 40px 40px;
+  padding: 10px;
+  background-color: #00aeda;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
 }
-#profileImg{
-    margin-left: 8px;
-    width: 300px;
-    height: 300px;
-    border-radius: 10%;
-    margin-bottom: 20px;
+.MyInfos {
+  width: 300px;
+  text-align: center;
 }
-.ImgBtn{
-    display: none;
+#profileImg {
+  margin-left: 8px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+  margin-bottom: 20px;
 }
-.ProfileText{
-    font-size: 10px;
-    color:white;
+.ImgBtn {
+  display: none;
 }
-.changname{
-    margin-top: 0px;
-    font-size: 10px;
-    color:white;
+.ProfileText {
+  font-size: 10px;
+  color: white;
 }
-.Nick{
-    font-size: 30px;
+.changname {
+  margin-top: 0px;
+  font-size: 10px;
+  color: white;
 }
-.Lv{
-    background-color: white;
+.Nick {
+  font-size: 30px;
 }
-.Points{
-    background-color: white;
+.Lv {
+  background-color: white;
 }
-.Challengg{
-    color: white;
-    font-size: 35px;
+.Points {
+  background-color: white;
 }
-.FollowAndChallenge{
-    margin-top:20px
+.Challengg {
+  color: white;
+  font-size: 35px;
+}
+.FollowAndChallenge {
+  margin-top: 20px;
 }
